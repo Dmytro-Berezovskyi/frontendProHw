@@ -1,19 +1,18 @@
 let number = +prompt("Please enter an integer");
 let count = 0;
 
+while (!Number.isInteger(number)) {
+    number = +prompt("It is not an integer. Please enter an integer");
+};
+
 for (let i = 1; i <= number; i++) {
-    switch (true) {
-        case !Number.isInteger(number):
-            number = prompt("It is not an integer. Please enter an integer");
-            break;
-        case number % i === 0:
-            count++;
-            break;
-    };
+    if (number % i === 0) {
+        count++;
+    }
 };
 
 if (count <= 2) {
-    console.log("is a prime number");
+    console.log(number + " is a prime number");
 } else {
-    console.log("is not a prime number");
-}
+    console.log(number + " is not a prime number");
+};
