@@ -6,4 +6,3 @@ while (i <= 100) {
     i += 10;
     console.log(exchange * 26);
 };
-
