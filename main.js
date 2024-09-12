@@ -1,8 +1,8 @@
 let i = 10;
-let exchange = 0;
+let dollars = 0;
 
 while (i <= 100) {
-    exchange = i;
+    dollars = i;
+    console.log(`${i} dollars = ${dollars * 26} hryvnias`);
     i += 10;
-    console.log(exchange * 26);
 };
