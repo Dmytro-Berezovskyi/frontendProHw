@@ -12,9 +12,9 @@ function arithmeticMean () {
         sum += arrNumber[i];
     };
     let mean = sum / arrNumber.length;
-    console.log(arrNumber);
-    console.log(sum);
-    console.log(mean);
+    console.log("Filtered array", arrNumber);
+    console.log(`Array sum ${sum}`);
+    console.log(`Arithmetic mean ${mean}`);
     return mean;
 };
 
