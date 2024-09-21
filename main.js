@@ -19,3 +19,16 @@ function arithmeticMean () {
 };
 
 arithmeticMean(arr);
+
+//const arr = [5, 8, true, "fewf", 65, "fger", 3];
+//
+//function arithmeticMean () {
+//    const arrNumber = arr.filter(function (item){
+//        if (typeof item === "number") {
+//            return item;
+//        };
+//    });
+//    console.log(arrNumber);
+//};
+//
+//arithmeticMean()
