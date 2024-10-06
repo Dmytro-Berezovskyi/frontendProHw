@@ -1,0 +1,12 @@
+.my_table {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.my_table,
+td {
+    border: 2px solid black;
+}
