@@ -11,14 +11,15 @@
 }
 
 .btn {
-    width: 500px;
+    width: 400px;
     height: 40px;
     background-color: antiquewhite;
     border: 2px solid aliceblue;
     border-radius: 9999px;
     color: grey;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
     cursor: pointer;
 }
 
