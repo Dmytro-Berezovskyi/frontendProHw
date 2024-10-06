@@ -5,4 +5,3 @@ img.src = `./img/${randomNum}.jpg`;
 
 
 console.log(randomNum);
-
