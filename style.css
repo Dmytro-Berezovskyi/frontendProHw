@@ -1,8 +1,10 @@
-.h1_grey {
+.h1 {
     text-align: center;
-    color: grey;
     font-size: 50px;
     font-weight: bold;
+}
+.h1_grey {
+    color: grey;
 }
 .h1_blue {
     color: blue;
