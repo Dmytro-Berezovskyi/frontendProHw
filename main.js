@@ -10,6 +10,6 @@ for (let i = 0; i < 10; i++) {
 
 const trs = document.querySelectorAll('tr');
 
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < 11; i++) {
     trs.forEach(tr => tr.appendChild(document.createElement('td')));
 };
