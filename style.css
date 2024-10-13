@@ -1,0 +1,17 @@
+.flex {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 200px;
+}
+.btn {
+    width: 200px;
+    height: 40px;
+    border-radius: 9999px;
+    border: none;
+    background-color: mediumseagreen;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
