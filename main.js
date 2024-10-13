@@ -5,4 +5,4 @@ console.log(first_btn);
 
 first_btn.addEventListener('click', () => {
     let link = prompt("Enter your link");
-})
+});
