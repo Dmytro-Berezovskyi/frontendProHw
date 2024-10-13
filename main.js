@@ -3,6 +3,10 @@ const second_btn = document.querySelector('.second-btn');
 
 console.log(first_btn);
 
+let link = "";
 first_btn.addEventListener('click', () => {
-    let link = prompt("Enter your link");
+    link = prompt("Enter your link");
 });
+second_btn.addEventListener('click', () => {
+
+})
