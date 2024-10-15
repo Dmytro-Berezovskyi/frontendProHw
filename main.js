@@ -1,7 +1,8 @@
-const form = document.querySelector('#form');
-const userInfo = {};
 const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 const phoneRegex = /^\+380[3-9][0-9]{8}$/;
+
+const form = document.querySelector('#form');
+const userInfo = {};
 
 function validateForm() {
     let isValid = true;
@@ -21,10 +22,12 @@ function validateForm() {
         isValid = false;
     };
 
-    if (!phoneRegex.test(userInfo.phone)) {
-        document.querySelector('#errPhone').innerHTML = "Номер телефону має починатись з +380"
+    if (!userInfo.phone) {
+        document.querySelector('#errPhone').innerHTML = "Номер телефону - це обовʼязкове поле";
         isValid = false;
-    };
+    }else if (!phoneRegex.test(userInfo.phone)) {
+        document.querySelector('#errPhone').innerHTML = "Номер телефону має починатись з +380";
+    }
 
     return isValid;
 };
@@ -40,10 +43,10 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
     clearErr();
 
-    userInfo.name = form.querySelector('#name').value;
-    userInfo.email = form.querySelector('#email').value;
-    userInfo.phone = form.querySelector('#phone').value;
-    userInfo.message = form.querySelector('#message').value;
+    userInfo.name = form.querySelector('#name').value.trim();
+    userInfo.email = form.querySelector('#email').value.trim();
+    userInfo.phone = form.querySelector('#phone').value.trim();
+    userInfo.message = form.querySelector('#message').value.trim();
 
     if (validateForm()) {
         console.log("User Date:", userInfo);
