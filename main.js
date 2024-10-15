@@ -11,4 +11,4 @@ form.addEventListener('submit', (e) => {
     userInfo.message = form.querySelector('#message').value;
 
     console.log("User Date:", userInfo);
-})
+});
