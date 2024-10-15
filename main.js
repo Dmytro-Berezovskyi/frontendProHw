@@ -2,6 +2,20 @@ const form = document.querySelector('#form');
 console.log(form);
 const userInfo = {};
 
+function validateForm() {
+    let isValid = true;
+
+    if (!userInfo.name) {
+        document.querySelector('#errName').innerHTML = "Імʼя - це обовʼязкове поле";
+    };
+
+    return isValid;
+};
+
+function clearErr() {
+    document.querySelector('#errName').innerHTML = "";
+}
+
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
@@ -10,5 +24,10 @@ form.addEventListener('submit', (e) => {
     userInfo.phone = form.querySelector('#phone').value;
     userInfo.message = form.querySelector('#message').value;
 
-    console.log("User Date:", userInfo);
+    if (validateForm()) {
+        console.log("User Date:", userInfo);
+    } else {
+        console.log("User date isn't valid!");
+    }
+
 });

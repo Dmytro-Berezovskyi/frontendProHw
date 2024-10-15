@@ -27,6 +27,13 @@
     font-size: 15px;
     text-transform: uppercase;
 }
+.err {
+    font-size: 15px;
+    font-family: "Roboto Light" , sans-serif;
+    color: red;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
 
 .form > input {
     height: 40px;
