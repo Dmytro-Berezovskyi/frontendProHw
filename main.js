@@ -36,7 +36,7 @@ function clearErr() {
     document.querySelector('#errName').innerHTML = "";
     document.querySelector('#errMessage').innerHTML = "";
     document.querySelector('#errEmail').innerHTML = "";
-    document.querySelector('#phone').innerHTML = "";
+    document.querySelector('#errPhone').innerHTML = "";
 };
 
 form.addEventListener('submit', (e) => {
