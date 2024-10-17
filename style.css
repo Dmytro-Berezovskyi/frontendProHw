@@ -1,0 +1,28 @@
+body {
+    backdrop-filter: blur(5px);
+}
+
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.img {
+    width: 700px;
+    height: 500px;
+}
+
+.info_box {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    width: 700px;
+}
+
+.h1_info {
+    font-size: 30px;
+
+    margin-bottom: 0;
+}
