@@ -3,7 +3,6 @@ body {
 }
 
 .bg {
-    backdrop-filter: blur(5px);
     background-color: black;
 }
 .container {
