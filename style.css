@@ -50,7 +50,7 @@ body {
     cursor: pointer;
 }
 .dot.active {
-    border: 1px solid #e8e8e8;
+    background-color: whitesmoke;
 }
 
 .info_box {
@@ -87,8 +87,11 @@ body {
     right: 0;
     border-radius: 15px 0 0 15px;
 }
+.next.none {
+    display: none;
+}
 .prev {
-    /*display: none;*/
+    display: none;
 
     position: absolute;
     top: 50%;

@@ -1,3 +1,4 @@
+//Initial setup
 const rooms = [
     {
         id: 1,
@@ -28,11 +29,52 @@ const rooms = [
 
 const btnNext = document.querySelector("#next");
 const btnPrev = document.querySelector("#prev");
-const dots = document.querySelector("#dots");
 const img = document.querySelector("#img");
 
+//Function
+function renderDots () {
+    const dotsContainer = document.querySelector("#dots");
+
+    rooms.forEach(room => {
+        const dot = document.createElement("div");
+
+        dot.innerHTML = `<div class="dot" id="dot" data-id="${room.id}"></div>`;
+
+        dotsContainer.appendChild(dot);
+    });
+};
+
+function goToImg(roomId) {
+        img.src = rooms[roomId - 1].image;
+};
+
+function visibleInvisiblePrev () {
+    if (currentImg >= 1) {
+        btnPrev.classList.add("visible");
+    } else {
+        btnPrev.classList.remove("visible");
+    };
+};
+
+function visibleInvisibleNext () {
+    if (currentImg === rooms.length - 1) {
+        btnNext.classList.add("none");
+    } else {
+        btnNext.classList.remove("none");
+    };
+};
+
+function removeActiveDot () {
+    dots.forEach(dot => dot.classList.remove("active"));
+};
+
+//Main
 img.src = rooms[0].image;
-let currentImg = 1;
+renderDots();
+const dots = document.querySelectorAll("#dot");
+dots[0].classList.add("active");
+
+let currentImg = 0;
 
 btnNext.addEventListener("click", () => {
     if (currentImg <= rooms.length - 2) {
@@ -40,6 +82,11 @@ btnNext.addEventListener("click", () => {
     };
 
     img.src = rooms[currentImg].image;
+    removeActiveDot();
+    dots[currentImg].classList.add("active");
+
+    visibleInvisiblePrev();
+    visibleInvisibleNext();
 });
 
 btnPrev.addEventListener("click", () => {
@@ -48,4 +95,27 @@ btnPrev.addEventListener("click", () => {
     };
 
     img.src = rooms[currentImg].image;
+    removeActiveDot();
+    dots[currentImg].classList.add("active");
+
+    visibleInvisiblePrev();
+    visibleInvisibleNext();
+});
+
+dots.forEach(dot => {
+    dot.addEventListener("click", (e) => {
+        removeActiveDot();
+        e.target.classList.add("active");
+
+        const roomId = +e.target.getAttribute("data-id");
+
+        if (roomId !== 0) {
+            currentImg = roomId - 1;
+        };
+
+        visibleInvisiblePrev();
+        visibleInvisibleNext();
+
+        goToImg(roomId);
+    });
 });
