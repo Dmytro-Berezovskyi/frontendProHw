@@ -1,3 +1,23 @@
+.container_header_todo {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 20px;
+}
+.todo_header {
+    width: 685px;
+    height: 25px;
+    background-color: coral;
+    color: white;
+    border-radius: 9999px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Roboto Light", sans-serif;
+}
+
 .todo_list {
     display: flex;
     flex-flow: column nowrap;
@@ -19,6 +39,9 @@
     font-size: 20px;
 
     padding-left: 20px;
+}
+.text_todo {
+    justify-items: left;
 }
 .btn_delete {
     width: 150px;
