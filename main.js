@@ -1,20 +1,14 @@
 const todoList = document.querySelector('#todo_list');
 const inputTodo = document.querySelector('#input');
 
-let todoItems = JSON.parse(localStorage.getItem('todoItems')) || [];
-
-console.log(todoItems);
-function saveTodoToLocalStorage() {
-    localStorage.setItem('todoItem', JSON.stringify(newTodo));
-}
-
-document.querySelector('#btn_add_todo').addEventListener('click', () => {
+//Function
+function addTodo(text) {
     const newTodo = document.createElement("div");
     const todoCheckbox = document.createElement("input");
     const todoText = document.createElement("span");
     const deleteBtn = document.createElement("button");
 
-    todoText.textContent = inputTodo.value;
+    todoText.textContent = text;
     deleteBtn.textContent = "Delete";
 
     newTodo.classList.add('todo');
@@ -28,13 +22,47 @@ document.querySelector('#btn_add_todo').addEventListener('click', () => {
     newTodo.appendChild(deleteBtn);
 
     deleteBtn.addEventListener('click', (event) => {
-        todoList.removeChild(newTodo)
+        todoList.removeChild(newTodo);
+        saveToLocalStorage();
     });
+};
 
-    const objNewTodo = {newTodo};
-    console.log(objNewTodo);
-    todoItems.push(objNewTodo);
-    console.log(newTodo);
-    saveTodoToLocalStorage();
-    inputTodo.value = "";
+function saveToLocalStorage() {
+    const todos = [];
+
+    document.querySelectorAll('.todo span').forEach(todo => {
+        todos.push(todo.textContent);
+    });
+    console.log(todos);
+
+    localStorage.setItem('todoItems', JSON.stringify(todos));
+};
+
+function renderLocalStorageItems() {
+    const savedTodos = JSON.parse(localStorage.getItem('todoItems')) || [];
+    savedTodos.forEach(todo => addTodo(todo));
+};
+
+function iteration() {
+    let counter = 0;
+
+    for (let i = 0; i < 100; i++) {
+        counter += 1;
+        break;
+    }
+    return counter;
+};
+console.log(iteration(), iteration());
+
+//Main
+document.querySelector('#btn_add_todo').addEventListener('click', () => {
+    const text = inputTodo.value.trim();
+
+    if (text !== "") {
+        addTodo(iteration() + ` ${text}`);
+        saveToLocalStorage();
+        inputTodo.value = "";
+    }
 });
+
+renderLocalStorageItems();
