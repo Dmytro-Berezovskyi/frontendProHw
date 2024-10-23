@@ -2,7 +2,7 @@ const todoList = document.querySelector('#todo_list');
 const inputTodo = document.querySelector('#input');
 
 //Function
-function addTodo(text) {
+function addTodo(text, isChecked = false) {
     const newTodo = document.createElement("div");
     const todoCheckbox = document.createElement("input");
     const todoText = document.createElement("span");
@@ -11,15 +11,21 @@ function addTodo(text) {
     todoText.textContent = text;
     deleteBtn.textContent = "Delete";
 
+    todoCheckbox.type = "checkbox";
+    todoCheckbox.checked = isChecked;
+
     newTodo.classList.add('todo');
     deleteBtn.classList.add('btn_delete');
-    todoCheckbox.name = "checkbox";
-    todoCheckbox.type = "checkbox";
+    todoCheckbox.classList.add('checkbox');
 
     todoList.appendChild(newTodo);
     newTodo.appendChild(todoCheckbox);
     newTodo.appendChild(todoText);
     newTodo.appendChild(deleteBtn);
+
+    todoCheckbox.addEventListener('change', () => {
+        saveToLocalStorage();
+    });
 
     deleteBtn.addEventListener('click', (event) => {
         todoList.removeChild(newTodo);
@@ -30,36 +36,28 @@ function addTodo(text) {
 function saveToLocalStorage() {
     const todos = [];
 
-    document.querySelectorAll('.todo span').forEach(todo => {
-        todos.push(todo.textContent);
+    document.querySelectorAll('.todo').forEach(todo => {
+        const text = todo.querySelector('span').textContent;
+        const isChecked = todo.querySelector('input[type="checkbox"]').checked;
+
+        todos.push({text, isChecked});
     });
-    console.log(todos);
 
     localStorage.setItem('todoItems', JSON.stringify(todos));
 };
 
 function renderLocalStorageItems() {
     const savedTodos = JSON.parse(localStorage.getItem('todoItems')) || [];
-    savedTodos.forEach(todo => addTodo(todo));
-};
 
-function iteration() {
-    let counter = 0;
-
-    for (let i = 0; i < 100; i++) {
-        counter += 1;
-        break;
-    }
-    return counter;
+    savedTodos.forEach(todo => addTodo(todo.text, todo.isChecked));
 };
-console.log(iteration(), iteration());
 
 //Main
 document.querySelector('#btn_add_todo').addEventListener('click', () => {
     const text = inputTodo.value.trim();
 
     if (text !== "") {
-        addTodo(iteration() + ` ${text}`);
+        addTodo(text);
         saveToLocalStorage();
         inputTodo.value = "";
     }
