@@ -23,18 +23,23 @@
 
     z-index: 1;
     cursor: pointer;
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
+    margin: 0;
 }
 .checkbox + span {
-    background: url("/img/checkbox-unchecked-svgrepo-com.svg") left top no-repeat;
+    background: url("img/checkbox-unchecked-svgrepo-com.svg") left center no-repeat;
 
-    padding-left: 30px;
+    padding-left: 40px;
+    background-size: 20px 20px;
+    position: absolute;
+    left: 30px;
+    top: 15px;
 
     cursor: pointer;
 }
-.checkbox:checked + span:before + span:after {
-
+.checkbox:checked + span {
+    background-image: url("img/checkbox-checked-svgrepo-com.svg");
 }
 .checkbox:checked + span {
     color: rgba(0, 0, 0, 0.50);
