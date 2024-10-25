@@ -7,18 +7,22 @@ function Student(firstName, lastName, dateOfBirth) {
 
     this.getAge = function () {
         let age = 2024 - this.dateOfBirth;
+
         console.log(`The age of the student is ${age} years`);
     }
+
     this.addGrade = function (grade) {
         this.grades.push(grade);
     }
+
     this.averageGrade = function () {
         let sum = this.grades.reduce((acc, number) => {
            return  acc + number;
         })
 
         return  sum / this.grades.length;
-    };
+    }
+
     this.present = function () {
         if (this.attendance.length <= 25) {
             this.attendance.push(true);
@@ -26,6 +30,7 @@ function Student(firstName, lastName, dateOfBirth) {
             console.log("Sorry. It is no longer possible to enter data");
         }
     }
+
     this.absent = function () {
         if (this.attendance.length <= 25) {
             this.attendance.push(false);
@@ -33,11 +38,13 @@ function Student(firstName, lastName, dateOfBirth) {
             console.log("Sorry. It is no longer possible to enter data");
         }
     }
+
     this.averageAttendance = function () {
         let attendedCount = this.attendance.filter((boolean) => boolean === true);
 
         return  attendedCount.length / this.attendance.length
     }
+
     this.summery = function () {
         if (this.averageGrade() > 90 && this.averageAttendance() > 0.9) {
             console.log("Молодець!");
@@ -47,7 +54,6 @@ function Student(firstName, lastName, dateOfBirth) {
             console.log("Редиска!");
         }
     }
-
 }
 
 const alex = new Student('Alex', 'Alexenko', 1996);
