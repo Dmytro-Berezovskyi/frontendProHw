@@ -27,11 +27,11 @@ function addTodo(text, isChecked = false) {
         saveToLocalStorage();
     });
 
-    deleteBtn.addEventListener('click', (event) => {
+    deleteBtn.addEventListener('click', () => {
         todoList.removeChild(newTodo);
         saveToLocalStorage();
     });
-};
+}
 
 function saveToLocalStorage() {
     const todos = [];
@@ -44,19 +44,19 @@ function saveToLocalStorage() {
     });
 
     localStorage.setItem('todoItems', JSON.stringify(todos));
-};
+}
 
 function renderLocalStorageItems() {
     const savedTodos = JSON.parse(localStorage.getItem('todoItems')) || [];
 
     savedTodos.forEach(todo => addTodo(todo.text, todo.isChecked));
-};
+}
 
 //Main
 document.querySelector('#btn_add_todo').addEventListener('click', () => {
     const text = inputTodo.value.trim();
 
-    if (text !== "") {
+    if (text) {
         addTodo(text);
         saveToLocalStorage();
         inputTodo.value = "";
