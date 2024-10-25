@@ -53,6 +53,17 @@ function renderLocalStorageItems() {
 }
 
 //Main
+inputTodo.addEventListener('keyup', (e) => {
+    if (e.key === 'Enter') {
+        const text = inputTodo.value.trim();
+
+        if (text) {
+            addTodo(text);
+            saveToLocalStorage();
+            inputTodo.value = "";
+        }
+    }
+})
 document.querySelector('#btn_add_todo').addEventListener('click', () => {
     const text = inputTodo.value.trim();
 
