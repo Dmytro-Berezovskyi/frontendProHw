@@ -1,11 +1,10 @@
 const minutes = document.querySelector("#minutes");
 const seconds = document.querySelector("#seconds");
 
+const initialTime = "01:45";
 
-let startTime = "01:45";
-
-let givenMinutes = startTime.slice(0, 2);
-let givenSeconds = startTime.slice(3, 5);
+let givenMinutes = initialTime.slice(0, 2);
+let givenSeconds = initialTime.slice(3, 5);
 minutes.innerHTML = givenMinutes;
 seconds.innerHTML = givenSeconds;
 
