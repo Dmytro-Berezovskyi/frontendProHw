@@ -1,0 +1,80 @@
+.flexbox {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 500px;
+    height: 800px;
+
+    background-color: rgba(148, 149, 151, 0.8);
+}
+
+.container-timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 200px;
+    height: 200px;
+
+    border-radius: 99999px;
+    border: 1px solid #ECECEF;
+}
+
+.minutes,
+.seconds,
+.colon {
+    font-family: "Roboto Light" , sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+}
+.container-btn {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 50px;
+    width: 200px;
+}
+.container-btnStart,
+.container-btnStop {
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    justify-content: center;
+    gap: 8px;
+
+    text-align: center;
+}
+.container-btnStart > span,
+.container-btnStop > span {
+    font-family: "Roboto Light" , sans-serif;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-start,
+.btn-stop {
+    border-radius: 99999px;
+    border: 1px solid #ECECEF;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+
+    cursor: pointer;
+}
+.btn-start {
+    background-image: url("img/play.svg");
+    background-repeat: no-repeat;
+    background-position: 55% 50%;
+}
+.btn-stop {
+    background-image: url("img/pause.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
