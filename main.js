@@ -1,43 +1,41 @@
-const minutes = document.querySelector("#minutes");
-const seconds = document.querySelector("#seconds");
+//Initial setup
+const timer = document.querySelector('#timer');
 
-const initialTime = "01:45";
-
-let givenMinutes = initialTime.slice(0, 2);
-let givenSeconds = initialTime.slice(3, 5);
-minutes.innerHTML = givenMinutes;
-seconds.innerHTML = givenSeconds;
+let initialTime = 70;
 
 let secondsIntervalId = null;
-let minutesIntervalId = null;
+
+//Function
+function recordingFormat () {
+    let minutes = Math.floor(initialTime / 60);
+    let seconds = initialTime % 60;
+
+    if (minutes < 10) {
+        minutes = "0" + minutes;
+    }
+    if (seconds < 10) {
+        seconds = "0" + seconds;
+    }
+
+    return `${minutes}:${seconds}`;
+}
+
+//Main
+timer.innerHTML = recordingFormat();
 
 document.querySelector("#start").addEventListener("click", () => {
     secondsIntervalId = setInterval(() => {
-        if (givenSeconds !== "00") {
-            givenSeconds--;
+        if (initialTime !== 0) {
+            initialTime--;
         }
-        seconds.innerHTML = givenSeconds;
-        if (givenSeconds < 10 && givenSeconds !== "00") {
-            seconds.innerHTML = `0${givenSeconds}`;
-        }
-        if (givenSeconds === 0) {
+        timer.innerHTML = recordingFormat();
+
+        if (initialTime === 0) {
             clearInterval(secondsIntervalId);
         }
     },1000)
-
-    minutesIntervalId = setInterval(() => {
-        givenMinutes--;
-        minutes.innerHTML = givenMinutes;
-        if (givenMinutes < 10) {
-            minutes.innerHTML = `0${givenMinutes}`;
-        }
-        if (givenMinutes === 0) {
-            clearInterval(minutesIntervalId);
-        }
-    }, 60000)
 });
 
 document.querySelector("#stop").addEventListener("click", () => {
     clearInterval(secondsIntervalId);
-    clearInterval(minutesIntervalId);
 });
