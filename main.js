@@ -5,10 +5,10 @@ function renderWeather(data) {
     document.querySelector('#main-weather').innerHTML = data.weather[0].description;
     document.querySelector('#humidity').innerHTML = `${data.main.humidity}%`;
     document.querySelector('#pressure').innerHTML = `${data.main.pressure} kPa`;
-    document.querySelector('#main-temp').innerHTML = `${data.main.temp}&#176`;
-    document.querySelector('#max-temp').innerHTML = `${data.main.temp_max}&#176`;
-    document.querySelector('#min-temp').innerHTML = `${data.main.temp_min}&#176`;
-    document.querySelector('#feels_like-temp').innerHTML = `${data.main.feels_like}&#176`;
+    document.querySelector('#main-temp').innerHTML = `${Math.floor(data.main.temp)}&#176c`;
+    document.querySelector('#max-temp').innerHTML = `${Math.floor(data.main.temp_max)}&#176c`;
+    document.querySelector('#min-temp').innerHTML = `${Math.floor(data.main.temp_min)}&#176c`;
+    document.querySelector('#feels_like-temp').innerHTML = `${Math.floor(data.main.feels_like)}&#176c`;
     document.querySelector('#wind').innerHTML = `${data.wind.speed} km/h`;
 }
 
@@ -60,7 +60,8 @@ function clock() {
 }
 
 //Main
-fetch('https://api.openweathermap.org/data/2.5/weather?q=Prague&appid=5feb580c67bb3bcd2c582a5b11165414&units=metric').then((response) => {
+fetch('https://api.openweathermap.org/data/2.5/weather?q=Prague&appid=' +
+    '5feb580c67bb3bcd2c582a5b11165414&units=metric').then((response) => {
     return response.json();
 }).then((data) => {
     renderWeather(data);
