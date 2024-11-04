@@ -38,10 +38,17 @@ body {
     margin: 50px 0 0 0;
 }
 
+.weather-img {
+    margin-top: -50px;
+    margin-bottom: -60px !important;
+}
+
 .info-block {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
+    gap: 15px;
+
     width: 100%;
 
     font-weight: bold;
@@ -105,17 +112,34 @@ body {
 
 .temperature-block {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     justify-content: center;
+    align-items: baseline;
     width: 100%;
 
     font-size: 33px;
-    font-weight: bold;
+    font-weight: normal;
+
+    margin-top: -25px;
+
+    color: rgba(55, 59, 77, 0.8);
+}
+.row-temp {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+    width: 100%;
 }
 .col-temp {
     display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    width: 100%;
+}
+.min-temp {
+    margin-right: 30px;
 }
 .txt-fells_like,
 .feels_like-temp,
@@ -125,6 +149,9 @@ body {
     color: rgba(55, 59, 77, 0.6);
 }
 .main-temp {
+    font-size: 55px;
+    font-weight: bold;
+    color: #373B4D;
     margin-left: 20px;
     margin-right: 20px;
 }

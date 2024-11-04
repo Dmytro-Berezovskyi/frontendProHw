@@ -4,7 +4,7 @@ function renderWeather(data) {
     document.querySelector('#weather-img').src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`;
     document.querySelector('#main-weather').innerHTML = data.weather[0].description;
     document.querySelector('#humidity').innerHTML = `${data.main.humidity}%`;
-    document.querySelector('#pressure').innerHTML = `${data.main.pressure} kPa`;
+    document.querySelector('#pressure').innerHTML = `${data.main.pressure} hPa`;
     document.querySelector('#main-temp').innerHTML = `${Math.floor(data.main.temp)}&#176c`;
     document.querySelector('#max-temp').innerHTML = `${Math.floor(data.main.temp_max)}&#176c`;
     document.querySelector('#min-temp').innerHTML = `${Math.floor(data.main.temp_min)}&#176c`;
