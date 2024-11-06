@@ -26,7 +26,6 @@ const rooms = [
         image: "img/parking.jpg",
     },
 ];
-
 const btnNext = document.querySelector("#next");
 const btnPrev = document.querySelector("#prev");
 const img = document.querySelector("#img");
@@ -72,6 +71,7 @@ function removeActiveDot () {
 img.src = rooms[0].image;
 renderDots();
 const dots = document.querySelectorAll("#dot");
+console.log(dots);
 dots[0].classList.add("active");
 
 let currentImg = 0;
