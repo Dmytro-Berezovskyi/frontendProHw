@@ -1,0 +1,98 @@
+body {
+    font-family: "Roboto Light" ,sans-serif;
+    font-size: 16px;
+
+    background-color: #ECECEF;
+}
+
+.container-posts {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+
+    width: 500px;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.post-container {
+    display: flex;
+    flex-flow: column wrap;
+    overflow: hidden;
+
+    padding: 20px;
+    background-color: white;
+
+    width: 100%;
+}
+.title {
+    font-size: 20px;
+
+    margin: 0 0 20px 0;
+
+    color: rgba(0, 0, 0, 0.8);
+}
+.user-post {
+    display: inline-block;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
+    margin-bottom: 10px;
+}
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    margin-bottom: 10px;
+}
+.comments {
+    border: none;
+    background-color: transparent;
+    width: max-content;
+
+    text-transform: uppercase;
+    color: #4e8f63;
+
+    cursor: pointer;
+}
+.comments::after {
+    content: "";
+    background-image: url("./img/row.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 20px;
+    height: 20px;
+
+    padding-left: 20px;
+}
+
+.form-add_post {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.input-title {
+    height: 30px;
+
+    padding-left: 20px;
+}
+.input-body_post {
+    height: 90px;
+
+    padding: 10px 20px 10px 20px;
+}
+.new-post {
+    border: none;
+    background-color: #4e8f63;
+
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+
+    cursor: pointer;
+
+    height: 30px;
+}
