@@ -74,6 +74,34 @@ body {
     display: flex;
     flex-flow: column nowrap;
 }
+.status-success {
+    background-color: darkseagreen;
+    color: white;
+    font-weight: bold;
+
+    height: 20px;
+
+    padding: 5px 0 5px 20px;
+}
+.status-success::after {
+    content: "";
+    background-image: url("./img/success.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+    padding-left: 30px;
+
+}
+.status-failed {
+    background-color: #de8282;
+    color: white;
+    font-weight: bold;
+
+    height: 20px;
+
+    padding: 5px 0 5px 20px;
+}
 .input-title {
     height: 30px;
 
@@ -117,12 +145,17 @@ body {
 }
 .comment-name {
     font-weight: bold;
+
+    padding-left: 5px;
 }
 .comment-email {
     color: rgba(0, 0, 0, 0.6);
 
     padding-bottom: 10px;
+    padding-left: 5px;
 }
 .comment-txt {
     font-size: 14px;
+
+    padding-left: 10px;
 }
