@@ -4,11 +4,13 @@ const formAddPost = document.querySelector('#form-add_post');
 const inputTitle = document.querySelector('#input-title');
 const inputBody = document.querySelector("#input-body");
 
+const apiUrl = "https://jsonplaceholder.typicode.com"
+
 const postContainers = {};
 
 //Server function
 const loadPosts = () => {
-    fetch('https://jsonplaceholder.typicode.com/posts?_limit=10').then((response) => {
+    fetch(apiUrl + "/posts?_limit=10").then((response) => {
         return response.json();
     }).then((data) => {
         data.forEach((post) => {addPostToDom(post)})
