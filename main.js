@@ -1,9 +1,9 @@
 //Initial set
-import {loadPosts, loadComments, addNewPost} from './api.js';
+import {loadPosts, loadComments, addNewPost} from "./api.js";
 import {
     addPostToDom, addCommentToDom, statusSuccess, statusFailed,
     statusFailedPostToServer, addEventListenerToBtn, formAddPost
-} from './dom.js';
+} from "./dom.js";
 
 //const containerPosts = document.querySelector('#container-posts');
 //const formAddPost = document.querySelector('#form-add_post');
