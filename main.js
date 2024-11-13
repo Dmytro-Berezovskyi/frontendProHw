@@ -4,29 +4,74 @@ const formAddPost = document.querySelector('#form-add_post');
 const inputTitle = document.querySelector('#input-title');
 const inputBody = document.querySelector("#input-body");
 
-const apiUrl = "https://jsonplaceholder.typicode.com"
+const apiUrl = 'https://jsonplaceholder.typicode.com'
 
 const postContainers = {};
 
 //Server function
-const loadPosts = () => {
-    fetch(apiUrl + "/posts?_limit=10").then((response) => {
-        return response.json();
-    }).then((data) => {
-        data.forEach((post) => {addPostToDom(post)})
-    }).catch((error) => {
-        console.log(error)
-    });
+const loadPosts = async () => {
+    try {
+        const response = await fetch(apiUrl + '/posts?_limit=10');
+        if (!response.ok) {
+            throw new Error(`${response.status} Status: ${response.statusText}`);
+        }
+        const posts = await response.json();
+        posts.forEach(post => {addPostToDom(post)});
+    } catch (error) {
+        console.log(error);
+    }
 }
 
-const loadComments = (postId) => {
-    fetch(`https://jsonplaceholder.typicode.com/posts/${postId}/comments?_limit=2`).then((response) => {
-        return response.json();
-    }).then((data) => {
-        data.forEach((comment) => {addCommentToDom(comment, postId)})
-    }).catch((error) => {
-        console.log(error)
-    })
+const loadComments = async (postId) => {
+    try {
+        const response = await fetch(apiUrl + '/comments?_limit=2');
+        if (!response.ok) {
+            throw new Error(`${response.status} Status: ${response.statusText}`);
+        }
+        const comments = await response.json();
+        comments.forEach(comment => {addCommentToDom(comment, postId)})
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+const addNewPost = async (e) => {
+    e.preventDefault();
+
+    const title = inputTitle.value.trim();
+    const body = inputBody.value.trim();
+    const userId = 1;
+
+    if (title && body) {
+        try {
+            const response = await fetch(apiUrl + '/posts', {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    title: title,
+                    body: body,
+                    userId: userId,
+                })
+            });
+            if (!response.ok) {
+                statusFailedPostToServer();
+                throw new Error(`${response.status} Status: ${response.statusText}`);
+            }
+            const post = await response.json();
+            addPostToDom(post)
+
+            statusSuccess();
+        } catch (error) {
+            console.log(error);
+        }
+    } else {
+        statusFailed();
+    }
+
+    inputTitle.value = "";
+    inputBody.value = "";
 }
 
 //DOM function
@@ -113,38 +158,18 @@ function statusFailed() {
     }, 5000)
 }
 
+function statusFailedPostToServer () {
+    const postStatus = document.createElement('span');
+    postStatus.classList.add("status-failed");
+    postStatus.innerHTML = "Failed to post, please try again";
+    formAddPost.insertBefore(postStatus, inputTitle);
+
+    setTimeout(() => {
+        postStatus.remove();
+    }, 5000)
+}
+
 //Main
-formAddPost.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    const title = inputTitle.value.trim();
-    const body = inputBody.value.trim();
-    const userId = 1;
-
-    if (title && body) {
-        fetch(`https://jsonplaceholder.typicode.com/posts`, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-                title: title,
-                body: body,
-                userId: userId,
-            })
-        }).then((response) => {
-            return response.json();
-        }).then((data) => {
-            addPostToDom(data)
-
-            statusSuccess();
-        }).catch((error) => {console.log(error)});
-    } else {
-        statusFailed();
-    }
-
-    inputTitle.value = "";
-    inputBody.value = "";
-})
+formAddPost.addEventListener("submit", addNewPost);
 
 loadPosts();
