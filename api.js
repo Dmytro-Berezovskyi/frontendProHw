@@ -12,7 +12,7 @@ export const loadComments = (postId) => {
     });
 }
 
-export const addNewPost = () => {
+export const addNewPost = (title, body, userId) => {
     return fetch(apiUrl + '/posts', {
         method: 'POST',
         headers: {
