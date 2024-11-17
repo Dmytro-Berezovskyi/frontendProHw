@@ -6,7 +6,7 @@
     "build": "webpack --mode production",
     "dev": "webpack --mode development"
   },
-  "author": "",
+  "author": "Berezovskyi Dmytro",
   "license": "ISC",
   "description": "",
   "devDependencies": {
