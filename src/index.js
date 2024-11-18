@@ -106,6 +106,12 @@ cardNumber.addEventListener('input', () => {
     numberThird.textContent = cardNumber.value.slice(9, 14);
     numberFourth.textContent = cardNumber.value.slice(14, 19);
 
+    if (cardNumberValue.length > 19) {
+        cardNumber.value = cardNumber.value.slice(0, 19);
+    }
+    if (/[a-zA-Zа-яА-ЯіІїЇєЄ]/.test(cardNumberValue)) {
+        cardNumber.value = '';
+    }
     if (cardNumber.value.length === 0) {
         numberFirst.textContent = "2132";
         numberSecond.textContent = "****";

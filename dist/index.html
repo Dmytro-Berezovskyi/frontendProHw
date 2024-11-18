@@ -1,94 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
-<header>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,
+<html>
+    <header>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, 
         initial-scale=1, shrink-to-fit=no, minimal-ui">
-    <link rel="stylesheet" href="../src/normalize.css">
-    <link rel="stylesheet" href="../dist/style.css">
-    <title>Pay form</title>
-</header>
+        <link rel="stylesheet" href="../src/normalize.css">
+        <link rel="stylesheet" href="./style.css">
+        <title></title>
+    </header>
 
-<body>
-<div class="container">
-    <form class="form-card" id="formCard">
-        <label for="c-number">Card Number</label>
-        <input type="text" name="c-number" id="c-number"
-               placeholder="2132 4324 4353 5355">
-        <span class="err-number err" id="err-number"></span>
-        <label for="c-holder">Card Holder</label>
-        <input type="text" name="c-holder" id="c-holder"
-               placeholder="Full name">
-        <span class="err-name err" id="err-name"></span>
-        <span class="lab-ex-cvv">
+    <body>
+        <div class="container">
+            <form class="form-card" id="formCard">
+                <label for="c-number">Card Number</label>
+                <input type="text" name="c-number" id="c-number"
+                placeholder="2132 4324 4353 5355">
+                <span class="err-number err" id="err-number"></span>
+                <label for="c-holder">Card Holder</label>
+                <input type="text" name="c-holder" id="c-holder"
+                placeholder="Full name">
+                <span class="err-name err" id="err-name"></span>
+                <span class="lab-ex-cvv">
                     <label for="month">Expiration Date</label>
                     <label for="cvv">CVV</label>
-        </span>
-        <div class="expires">
-            <select name="month" id="month">
-                <option value="month" selected>Month</option>
-                <option value="january">January</option>
-                <option value="february">February</option>
-                <option value="march">March</option>
-                <option value="april">April</option>
-                <option value="may">May</option>
-                <option value="june">June</option>
-                <option value="july">July</option>
-                <option value="august">August</option>
-                <option value="september">September</option>
-                <option value="october">October</option>
-                <option value="november">November</option>
-                <option value="dicember">Dicember</option>
-            </select>
-            <select name="year" id="year">
-                <option value="year" selected>Year</option>
-                <option value="2025">2025</option>
-                <option value="2026">2026</option>
-                <option value="2027">2027</option>
-                <option value="2028">2028</option>
-                <option value="2029">2029</option>
-                <option value="2030">2030</option>
-            </select>
+                </span>
+                <div class="expires">
+                    <select name="month" id="month">
+                        <option value="month" selected>Month</option>
+                        <option value="january">January</option>
+                        <option value="february">February</option>
+                        <option value="march">March</option>
+                        <option value="april">April</option>
+                        <option value="may">May</option>
+                        <option value="june">June</option>
+                        <option value="july">July</option>
+                        <option value="august">August</option>
+                        <option value="september">September</option>
+                        <option value="october">October</option>
+                        <option value="november">November</option>
+                        <option value="dicember">Dicember</option>
+                    </select>
+                    <select name="year" id="year">
+                        <option value="year" selected>Year</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2029">2029</option>
+                        <option value="2030">2030</option>
+                    </select>
 
-            <input type="password" name="cvv" placeholder="***" id="cvv">
-        </div>
-        <div class="container-err-date_cvv">
-            <span class="err-date err" id="err-date"></span>
-            <span class="err-cvv err" id="err-cvv"></span>
-        </div>
-
-        <button type="submit" class="btn-sub" id="btnSub">Pay</button>
-    </form>
-
-    <div class="card">
-        <header class="head-card">
-            <img src="../img/chip.svg" alt="chip">
-            <img src="../img/visa.svg" alt="visa">
-        </header>
-
-        <div class="input-card">
-            <span id="c-number-first">2132</span>
-            <span class="star" id="c-number-second">****</span>
-            <span class="star" id="c-number-third">****</span>
-            <span class="star" id="c-number-fourth">****</span>
-        </div>
-
-        <footer class="foot-card">
-            <div class="holder-card">
-                <span>Card Holder</span>
-                <span id="fullName">Full name</span>
-            </div>
-            <div class="expires-card">
-                <span>Expires</span>
-                <div class="containerDate">
-                    <span id="monthCard">mm</span>
-                    <span> / </span>
-                    <span id="yearCard">yy</span>
+                    <input type="password" name="cvv" placeholder="***" id="cvv">
                 </div>
+                <div class="container-err-date_cvv">
+                    <span class="err-date err" id="err-date"></span>
+                    <span class="err-cvv err" id="err-cvv"></span>
+                </div>
+
+                <button type="submit" class="btn-sub" id="btnSub">Pay</button>
+            </form>
+
+            <div class="card">
+                <header class="head-card">
+                    <img src="images/chip.svg" alt="chip" id="img-chip">
+                    <img src="images/visa.svg" alt="visa" id="img-visa">
+                </header>
+
+                <div class="input-card">
+                    <span id="c-number-first">2132</span>
+                    <span class="star" id="c-number-second">****</span>
+                    <span class="star" id="c-number-third">****</span>
+                    <span class="star" id="c-number-fourth">****</span>
+                </div>
+
+                <footer class="foot-card">
+                    <div class="holder-card">
+                        <span>Card Holder</span>
+                        <span id="fullName">Full name</span>
+                    </div>
+                    <div class="expires-card">
+                        <span>Expires</span>
+                        <div class="containerDate">
+                            <span id="monthCard">mm</span>
+                            <span> / </span>
+                            <span id="yearCard">yy</span>
+                        </div>
+                    </div>
+                </footer>
             </div>
-        </footer>
-    </div>
-</div>
-<script src="bundle.js"></script>
-</body>
+        </div>
+    <script src="./bundle.js"></script>
+    </body>
 </html>

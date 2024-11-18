@@ -1,12 +1,10 @@
-@import "card";
-@import "colors";
+@use "card" as *;
+@use "export" as *;
 
 :root {
   box-sizing: border-box;
 
-  font-family: inter, sans-serif;
-  font-size: 10px;
-  font-weight: 500;
+  @extend %normal-text;
 }
 
 *,
@@ -48,17 +46,15 @@ label {
     height: 35px;
     padding: 7px 13px;
 
-    font-size: 14px;
-    font-weight: 700;
+    @extend %bold-text;
     color: rgb(0, 0, 0);
-
-    .is-invalid {
-      border-color: $inputBorderInvalid-color;
-    }
 
     ::placeholder {
       color: $placeholder-color;
     }
+  }
+  input.is-invalid {
+    border-color: $inputBorderInvalid-color;
   }
 }
 
@@ -76,7 +72,7 @@ label {
     content: "";
     width: 15px;
     height: 15px;
-    background-image: url(/dist/images/error.svg);
+    background-image: url(../../img/error.svg);
     background-repeat: no-repeat;
     position: absolute;
     top: 0;
@@ -88,7 +84,7 @@ label {
   content: "";
   width: 15px;
   height: 15px;
-  background-image: url(/dist/images/error.svg);
+  background-image: url(../../img/error.svg);
   background-repeat: no-repeat;
   position: absolute;
   top: 0;
@@ -117,8 +113,7 @@ label {
 
     height: 35px;
 
-    font-size: 14px;
-    font-weight: 700;
+    @extend %bold-text;
     color: rgb(0, 0, 0);
 
     padding: 9px 13px;
@@ -132,7 +127,7 @@ label {
   select {
     width: 120px;
 
-    background-image: url(/dist/images/row.svg);
+    background-image: url(../../img/row.svg);
     background-repeat: no-repeat;
     background-position: right 13px top 50%;
     cursor: pointer;
@@ -159,8 +154,7 @@ label {
   background-color: $btnSubmit-color;
   cursor: pointer;
 
-  font-size: 14px;
-  font-weight: 700;
+  @extend %bold-text;
   color: white;
   text-transform: uppercase;
 
