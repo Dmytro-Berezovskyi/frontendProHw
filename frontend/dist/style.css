@@ -85,7 +85,8 @@ body {
   gap: 0.5rem;
 }
 
-.popup-add {
+.popup-add,
+.popup-edit {
   display: none;
   position: fixed;
   top: 0;
@@ -95,20 +96,33 @@ body {
   width: 100%;
   height: 100%;
 }
-.popup-add .form-add {
+.popup-add .form-add,
+.popup-add .form-edit,
+.popup-edit .form-add,
+.popup-edit .form-edit {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   gap: 0.5rem;
   margin-top: 300px;
 }
-.popup-add .form-add .add-input {
+.popup-add .form-add .add-input,
+.popup-add .form-add .edit-input,
+.popup-add .form-edit .add-input,
+.popup-add .form-edit .edit-input,
+.popup-edit .form-add .add-input,
+.popup-edit .form-add .edit-input,
+.popup-edit .form-edit .add-input,
+.popup-edit .form-edit .edit-input {
   width: 300px;
   border-radius: 0.5rem;
   border: 1px solid rgba(237, 118, 94, 0.7);
   padding: 0.5rem;
 }
-.popup-add .form-add .form-btn {
+.popup-add .form-add .form-btn,
+.popup-add .form-edit .form-btn,
+.popup-edit .form-add .form-btn,
+.popup-edit .form-edit .form-btn {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -116,5 +130,9 @@ body {
 }
 
 .popup-add.show {
+  display: block;
+}
+
+.popup-edit.show {
   display: block;
 }
