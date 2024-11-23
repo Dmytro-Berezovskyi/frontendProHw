@@ -33,6 +33,7 @@ Temporary Items
 .DS_*
 *.log
 logs
+.idea/
 **/*.backup.*
 **/*.back.*
 
