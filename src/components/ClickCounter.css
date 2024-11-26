@@ -1,0 +1,89 @@
+body {
+    font-family: "Roboto Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+}
+
+.counter-container {
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 200px;
+}
+
+.counter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 200px;
+    height: 50px;
+
+    background-color: rgba(35, 39, 42, 0.9);
+    border-radius: 50px;
+}
+
+.btn-counter {
+    width: 50px;
+    height: 50px;
+
+    background-color: transparent;
+    border: none;
+    border-radius: 99999px;
+
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+.box-count {
+    width: 50px;
+    height: 50px;
+
+    background-color: rgba(117, 117, 117, 0.9);
+    border-radius: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.count {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 20px;
+}
+
+.addend {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    margin-bottom: 10px;
+}
+.btn-addend {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid rgba(117, 117, 117, 0.9);
+    border-radius: 99999px;
+    cursor: pointer;
+}
+
+.select {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-reset {
+    width: 200px;
+    height: 20px;
+
+    background-color: rgba(35, 39, 42, 0.9);
+    border-radius: 99999px;
+    color: rgba(255, 255, 255, 0.8);
+
+    cursor: pointer;
+}
