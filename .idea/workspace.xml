@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="017a311c-1057-40b2-84df-6609a1ae6d32" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/SmilesVote/VoitingResults.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/SmilesVote/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SmilesVote/Item.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SmilesVote/SmilesContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/SmilesVote/SmilesContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SmilesVote/SmilesContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/SmilesVote/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SmilesVote/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,11 +62,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages/SmilesVote" />
       <recent name="$PROJECT_DIR$/frontend/dist" />
       <recent name="$PROJECT_DIR$/frontend/src" />
       <recent name="$PROJECT_DIR$/frontend" />
       <recent name="$PROJECT_DIR$/frontend/src/js" />
-      <recent name="$PROJECT_DIR$/frontend/src/css" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -178,7 +174,7 @@
       <workItem from="1732449901898" duration="1232000" />
       <workItem from="1732640290835" duration="6269000" />
       <workItem from="1732731154817" duration="834000" />
-      <workItem from="1732815018254" duration="2572000" />
+      <workItem from="1732815018254" duration="5141000" />
     </task>
     <servers />
   </component>

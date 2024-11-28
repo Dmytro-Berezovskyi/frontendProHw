@@ -7,27 +7,27 @@ class SmilesVote extends Component{
         this.state={
             smiles: [
                 {
-                    smile: "",
+                    smile: "&#x1F603",
                     count: 0,
                     id: 1
                 },
                 {
-                    smile: "",
+                    smile: "&#x1F606",
                     count: 0,
                     id: 2
                 },
                 {
-                    smile: "",
+                    smile: "&#x1F602",
                     count: 0,
                     id: 3
                 },
                 {
-                    smile: "",
+                    smile: "&#x1F923",
                     count: 0,
                     id: 4
                 },
                 {
-                    smile: "",
+                    smile: "&#x1F643",
                     count: 0,
                     id: 5
                 },
@@ -35,9 +35,27 @@ class SmilesVote extends Component{
         }
     }
 
+    componentDidMount() {
+        localStorage.getItem(JSON.parse("smiles"));
+    }
+
+    componentDidUpdate(prevProps, prevState) {
+        localStorage.setItem(JSON.stringify(this.state.smiles));
+    }
+
+    handleUpdateCount(id) {
+        this.setState({
+            smiles: this.state.smiles.map(smile => {
+                return smile.id === id {...smile, count: this.state.count + 1}
+            })
+        })
+    }
+
     render(){
         return(
+            <h1>Vote for the smile</h1>
 
+            <button onClick={() => {}}>Show results</button>
         )
     }
 }
