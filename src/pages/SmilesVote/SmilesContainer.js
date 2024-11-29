@@ -1,16 +1,13 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-class SmilesContainer extends React.Component {
+class SmilesContainer extends Component {
     render() {
         return (
             <div style={{ display: 'flex', gap: '10px' }}>
-                {this.props.smiles.forEach(smile => {
-                    <div>
-                        <span onClick={this.props.handleUpdateCount(smile.id)}>{smile.smile}</span>
-                        <span>{smile.count}</span>
-                    </div>
-                })}
+                {this.props.smiles.map(smile => <img key={smile.id} src={smile.smile} style={{ width: '50px', height: '50px'}}></img>)}
             </div>
         )
     }
 }
+
+export default SmilesContainer;
