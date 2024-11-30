@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="017a311c-1057-40b2-84df-6609a1ae6d32" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/SmilesVote/VotingResult.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/SmilesVote/Item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SmilesVote/Item.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/SmilesVote/SmilesContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SmilesVote/SmilesContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/SmilesVote/VoitingResults.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/SmilesVote/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SmilesVote/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +175,7 @@
       <workItem from="1732731154817" duration="834000" />
       <workItem from="1732815018254" duration="5263000" />
       <workItem from="1732909903159" duration="5609000" />
-      <workItem from="1732953724579" duration="17201000" />
+      <workItem from="1732953724579" duration="18787000" />
     </task>
     <servers />
   </component>
