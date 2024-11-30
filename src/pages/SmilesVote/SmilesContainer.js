@@ -1,10 +1,14 @@
 import React, {Component} from 'react';
 
+import Item from "./Item";
+
 class SmilesContainer extends Component {
     render() {
+        const {smiles, handleUpdateCount} = this.props;
+
         return (
             <div style={{ display: 'flex', gap: '10px' }}>
-                {this.props.smiles.map(smile => <img key={smile.id} src={smile.smile} style={{ width: '50px', height: '50px'}}></img>)}
+                {smiles.map(smile => (<Item smile={smile} key={smile.id} handleUpdateCount={handleUpdateCount} />))}
             </div>
         )
     }
