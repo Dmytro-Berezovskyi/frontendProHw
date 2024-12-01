@@ -1,14 +1,15 @@
-import React, {Component} from "react";
+import {useState} from "react";
+import {useEffect} from "react";
 
 import SmilesContainer from "./SmilesContainer";
 import VotingResult from "./VotingResult";
 
-class SmilesVote extends Component {
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            smiles: JSON.parse(localStorage.getItem("smiles")) || [
+export default function SmilesVote() {
+    const [smiles, setSmiles] = useState( () => {
+        const storedSmiles = localStorage.getItem("smiles");
+        return storedSmiles
+        ? JSON.parse(storedSmiles)
+            : [
                 {
                     smile: "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f603.svg",
                     count: 0,
@@ -34,79 +35,58 @@ class SmilesVote extends Component {
                     count: 0,
                     id: 5
                 },
-            ],
+            ];
+    })
 
-            winner: null,
-        }
+    const [winner, setWinner] = useState(null)
+
+    useEffect(() => {
+        localStorage.setItem("smiles", JSON.stringify(smiles));
+    }, [smiles]);
+
+    const handleUpdateCount = (id) => {
+        setSmiles(smiles.map(smile => (smile.id === id ? {...smile, count: smile.count + 1} : smile)))
     }
 
-    componentDidUpdate(prevProps, prevState){
-        if (prevState.smiles !== this.state.smiles) {
-            localStorage.setItem("smiles", JSON.stringify(this.state.smiles));
-        }
-    }
-
-    handleUpdateCount = (id) => {
-        this.setState({
-            smiles: this.state.smiles.map(smile => (smile.id === id ? {...smile, count: smile.count + 1} : smile))
-        })
-    }
-
-    winnerSmile = () => {
-        const winner = this.state.smiles.reduce(
+    const winnerSmile = () => {
+        const winner = smiles.reduce(
             (max, current) =>
                 current.count > max.count && current.count ? current : max
         )
 
-        this.setState({ winner: winner })
+        setWinner(winner)
     };
 
-    clearResult = () => {
-        this.setState({
-            winner: null,
-            smiles: this.state.smiles.map(smile => ({...smile, count: 0}))
-        })
+    const clearResult = () => {
+        setWinner(null);
+        setSmiles(smiles.map(smile => ({...smile, count: 0})))
     }
 
-
-    render() {
-        const { smiles, winner } = this.state;
-        const {winnerSmile, clearResult, handleUpdateCount} = this;
-
-        return (
-            <div style={{display: "flex", flexDirection: "column", alignItems: "center", gap: "15px"}}>
-                <h1>Vote for the smile</h1>
-
-                <SmilesContainer smiles={smiles} handleUpdateCount={handleUpdateCount}/>
-
+    return (
+        <div style={{display: "flex", flexDirection: "column", alignItems: "center", gap: "15px"}}>
+            <h1>Vote for the smile</h1>
+            <SmilesContainer smiles={smiles} handleUpdateCount={handleUpdateCount}/>
+            <button
+                style={{
+                    border: "none", background: "#199FB1", padding: "10px",
+                    borderRadius: "5px", color: "white", cursor: "pointer"
+            }}
+                onClick={winnerSmile}
+            >
+                Show Results
+            </button>
+            {winner ? <VotingResult winner={winner} winnerSmile={winnerSmile}/> : "No votes yet"}
+            {winner ?
                 <button
                     style={{
                         border: "none", background: "#199FB1", padding: "10px",
                         borderRadius: "5px", color: "white", cursor: "pointer"
-                    }}
-                    onClick={winnerSmile}
+                }}
+                    onClick={clearResult}
                 >
-                    Show Results
-                </button>
-
-                {this.state.winner ? <VotingResult winner={winner} winnerSmile={winnerSmile}/> : "No votes yet"}
-
-                {this.state.winner ?
-                    <button
-                        style={{
-                            border: "none", background: "#199FB1", padding: "10px",
-                            borderRadius: "5px", color: "white", cursor: "pointer"
-                        }}
-                        onClick={clearResult}
-                    >
-                        Clear Results
-                    </button> : null
-                }
-
-            </div>
-
-        )
-    }
+                    Clear Results
+                </button> : null
+            }
+        </div>
+    )
 }
-
-export default SmilesVote;
