@@ -1,15 +1,17 @@
 import {Routes, Route, NavLink} from 'react-router-dom';
 
-import Home from "./Home/Home";
-import About from "./About/About";
-import Contact from "./Contact/Contact";
+import Home from "./pages/Home/index";
+import AboutMe from "./pages/AboutMe/index";
+import Contacts from "./pages/Contacts/index";
+import NotFound from "./pages/NotFound/index";
 
 function App() {
   return (
     <Routes>
-      <Route path="/" exact component={Home} />
-      <Route path="/about" component={About} />
-      <Route path="/contact" component={Contact} />
+        <Route path="/" element={<Home />}/>
+        <Route path="/about" element={<AboutMe />}/>
+        <Route path="/contacts" element={<Contacts />}/>
+        <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }
