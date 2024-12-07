@@ -1,38 +1,44 @@
-import {useState} from "react";
-
+import {useState, useContext} from "react";
 import { v4 as uuid } from "uuid";
 
+import {ThemeContext} from "../../context/ThemeContext";
 import TodoForm from "./TodoForm";
 import TodoList from "./TodoList";
 
+import './Todo.css';
+
 export default function Home() {
-    const [todos, setTodos] = useState('');
+    const [todos, setTodos] = useState([]);
+    const {theme} = useContext(ThemeContext);
 
-    const handleChange = (e) => {
-        setTodos(e.target.value);
-    }
-
-    const handleSubmit = (e) => {
-        addTodo(task);
-        setTodos('');
-    }
-
-    const addTodo = (task) => {
+    const addTodo = (title) => {
         const newTodo = {
-            task,
+            title,
             completed: false,
             id: uuid(),
         }
 
-        setTodos(...todos, newTodo);
+        setTodos([...todos, newTodo]);
+    }
+
+    const deleteTodo = (id) => {
+        setTodos(todos.filter(todo => todo.id !== id))
+    }
+
+    const toggleTodo = (id) => {
+        setTodos(todos.map(todo => {
+            return todo.id === id ? {...todo, completed: !todo.completed} : todo
+        }))
     }
 
     return (
-     <div>
-        <h1>Todo list</h1>
+     <div className={`todo-container`}>
+         <div className={`todoList-${theme}`}>
+             <h1>Todo list</h1>
 
-         <TodoForm />
-         <TodoList />
+             <TodoForm addTodo={addTodo}/>
+             <TodoList todos={todos} setTodos={setTodos} deleteTodo={deleteTodo} toggleTodo={toggleTodo}/>
+         </div>
      </div>
     );
 }

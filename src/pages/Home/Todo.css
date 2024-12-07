@@ -1,0 +1,73 @@
+.todo-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.todoList-light {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    gap: 20px;
+
+    background-color: #ada69c;
+    color: white;
+
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 3px;
+    width: 500px;
+}
+.todoList-light > h1 {
+    margin: 0;
+    align-self: center;
+}
+
+.todoList-dark {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    gap: 20px;
+
+    background-color: #292929;
+    color: white;
+
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 2px;
+    width: 500px;
+}
+.todoList-dark > h1 {
+    margin: 0;
+    align-self: center;
+}
+
+.input-form {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.input-form input {
+    padding: 5px;
+    width: 50%;
+}
+.input-form button {
+    width: 50%;
+
+    cursor: pointer;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 5px;
+}
+.todo-item > span {
+    width: 50%;
+}
+.todo-item > button {
+    width: 30%;
+    height: 30px;
+
+    cursor: pointer;
+}

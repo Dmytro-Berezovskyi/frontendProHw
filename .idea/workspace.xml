@@ -5,17 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="017a311c-1057-40b2-84df-6609a1ae6d32" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/api/apis.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Layout/Layout.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Layout/Layout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Home/TodoForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Home/TodoItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Home/TodoList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/context/ThemeContext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/Todo.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout/Layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/Layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/Layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/AboutMe/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AboutMe/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Contacts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Contacts/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/TodoForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/TodoForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/TodoItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/TodoItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/TodoList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/TodoList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,8 +27,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -191,7 +191,7 @@
       <workItem from="1733071508457" duration="8550000" />
       <workItem from="1733332536616" duration="598000" />
       <workItem from="1733507039822" duration="4650000" />
-      <workItem from="1733567053283" duration="9401000" />
+      <workItem from="1733567053283" duration="27066000" />
     </task>
     <servers />
   </component>

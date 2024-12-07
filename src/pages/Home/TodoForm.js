@@ -1,19 +1,28 @@
 import {useState} from "react";
 
-import Home from "./index";
 
+export default function TodoForm ({addTodo}) {
+    const [title, setTitle] = useState('');
 
-export default function TodoForm ({addTodo, handleChange, handleSubmit}) {
+    const handleChange = (e) => {
+        setTitle(e.target.value);
+    }
+
+    const handleSubmit = (e) => {
+        addTodo(title);
+        setTitle('');
+    }
+
     return (
-        <div>
+        <div className='input-form'>
             <input
                 type='text'
-                value={task}
+                value={title}
                 placeholder='Enter new task'
                 onChange={handleChange}
             />
 
-            <button onClick={handleSubmit}>Add todo</button>
+            <button onClick={handleSubmit}>Submit</button>
         </div>
     )
 }
