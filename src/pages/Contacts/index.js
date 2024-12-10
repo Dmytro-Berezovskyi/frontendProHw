@@ -2,6 +2,10 @@ import {useContext} from "react";
 
 import {ThemeContext} from "../../context/ThemeContext";
 
+import facebookIcon from "../../img/facebook.svg";
+import instagramIcon from "../../img/instagram.svg";
+import linkedinIcon from "../../img/linkedin.svg";
+
 export default function Contacts() {
     const {theme} = useContext(ThemeContext);
 
@@ -27,13 +31,13 @@ export default function Contacts() {
                     margin: '0'
                 }}>
                     <li style={{listStyleType: 'none'}}>
-                        <img style={{width: '30px', height: '30px', cursor: 'pointer'}} src='/img/facebook.svg' alt=''/>
+                        <img style={{width: '30px', height: '30px', cursor: 'pointer'}} src={facebookIcon} alt=''/>
                     </li>
                     <li style={{listStyleType: 'none'}}>
-                        <img style={{width: '30px', height: '30px', cursor: 'pointer'}} src='/img/instagram.svg' alt=''/>
+                        <img style={{width: '30px', height: '30px', cursor: 'pointer'}} src={instagramIcon} alt=''/>
                     </li>
                     <li style={{listStyleType: 'none'}}>
-                        <img style={{width: '30px', height: '30px', cursor: 'pointer'}} src='/img/linkedin.svg' alt=''/>
+                        <img style={{width: '30px', height: '30px', cursor: 'pointer'}} src={linkedinIcon} alt=''/>
                     </li>
                 </ul>
             </div>
