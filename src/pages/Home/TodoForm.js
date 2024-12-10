@@ -1,28 +1,43 @@
-import {useState} from "react";
+import {Formik, Form, Field, ErrorMessage} from "formik";
 
 
-export default function TodoForm ({addTodo}) {
-    const [title, setTitle] = useState('');
-
-    const handleChange = (e) => {
-        setTitle(e.target.value);
+export default function TodoForm({addTodo}) {
+    const handleSubmit = (values, {resetForm}) => {
+        addTodo(values.title);
+        resetForm();
     }
 
-    const handleSubmit = (e) => {
-        addTodo(title);
-        setTitle('');
+    const validate = (values) => {
+        const errors = {};
+
+        if (values.title.length < 5) {
+            errors.title = "Task must be at least 5 characters!";
+        }
+
+        return errors;
     }
 
     return (
-        <div className='input-form'>
-            <input
-                type='text'
-                value={title}
-                placeholder='Enter new task'
-                onChange={handleChange}
-            />
+        <Formik
+            initialValues={{title: '',}} onSubmit={handleSubmit} validate={validate}
+        >
+            {({ values }) => (
+                <Form>
+                    <div className='input-form'>
+                        <div className='input-err'>
+                            <Field
+                                type='text'
+                                placeholder='Enter new task'
+                                name='title'
+                            />
+                            <ErrorMessage name='title' className='error' component='span'/>
+                        </div>
+                        
 
-            <button onClick={handleSubmit}>Submit</button>
-        </div>
+                        <button type='submit'>Submit</button>
+                    </div>
+                </Form>
+            )}
+        </Formik>
     )
 }

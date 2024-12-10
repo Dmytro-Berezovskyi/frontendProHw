@@ -5,18 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="017a311c-1057-40b2-84df-6609a1ae6d32" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/context/ThemeContext.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Home/Todo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Form/Form.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Form/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/Layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/Layout.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Layout/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/Layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/AboutMe/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AboutMe/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Contacts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Contacts/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/Todo.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Todo.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home/TodoForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/TodoForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/TodoItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/TodoItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/TodoList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/TodoList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,23 +51,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;l27hw1&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/dmytroberezovskyi/Desktop/ПрактикаFrontend/frontendPro/frontendProHw&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "l28hw1",
+    "last_opened_file_path": "/Users/dmytroberezovskyi/Desktop/ПрактикаFrontend/frontendPro/frontendProHw",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "terminal",
+    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components/Layout" />
@@ -191,7 +189,9 @@
       <workItem from="1733071508457" duration="8550000" />
       <workItem from="1733332536616" duration="598000" />
       <workItem from="1733507039822" duration="4650000" />
-      <workItem from="1733567053283" duration="27066000" />
+      <workItem from="1733567053283" duration="27529000" />
+      <workItem from="1733599686256" duration="325000" />
+      <workItem from="1733778422796" duration="9759000" />
     </task>
     <servers />
   </component>

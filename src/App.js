@@ -1,11 +1,14 @@
 import {Routes, Route, NavLink} from 'react-router-dom';
 
 import {ThemeProvider} from "./context/ThemeContext";
+
+import Layout from "./components/Layout/Layout";
 import Home from "./pages/Home";
 import AboutMe from "./pages/AboutMe";
 import Contacts from "./pages/Contacts";
 import NotFound from "./pages/NotFound";
-import Layout from "./components/Layout/Layout";
+import FormikForm from "./pages/Form";
+
 
 function App() {
   return (
@@ -15,6 +18,7 @@ function App() {
                   <Route index element={<Home />}/>
                   <Route path="/about" element={<AboutMe />}/>
                   <Route path="/contacts" element={<Contacts />}/>
+                  <Route path="/form" element={<FormikForm/>}/>
                   <Route path="*" element={<NotFound />} />
               </Route>
           </Routes>

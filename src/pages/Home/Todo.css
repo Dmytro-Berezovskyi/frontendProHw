@@ -46,12 +46,22 @@
     justify-content: space-between;
     gap: 20px;
 }
-.input-form input {
-    padding: 5px;
+.input-err {
+    display: flex;
+    flex-flow: column nowrap;
+
     width: 50%;
+}
+.error {
+    color: #c72b41;
+}
+.input-err input {
+    padding: 5px;
+    width: 100%;
 }
 .input-form button {
     width: 50%;
+    height: 29px;
 
     cursor: pointer;
 }
