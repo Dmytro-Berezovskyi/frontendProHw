@@ -15,6 +15,7 @@ export default function Layout() {
                 <NavLink style={{color: 'white', textDecoration: 'none'}} to="/about/">About Me</NavLink>
                 <NavLink style={{color: 'white', textDecoration: 'none'}} to="/contacts/">Contacts</NavLink>
                 <NavLink style={{color: 'white', textDecoration: 'none'}} to="/form/">Form</NavLink>
+                <NavLink style={{color: 'white', textDecoration: 'none'}} to="/counter/">Counter</NavLink>
                 <button onClick={toggleTheme} style={{background: 'transparent', color: 'white', border: 'none', cursor: 'pointer'}}>Change Theme</button>
             </div>
 

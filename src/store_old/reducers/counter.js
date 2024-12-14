@@ -1,6 +1,6 @@
 import {
     INCREMENT_COUNT,
-    DECREMENT_COUNT,
+    DECREMENT_COUNT, RESET_COUNT,
 } from "../actions/actionTypes";
 
 const initialState = {
@@ -14,6 +14,8 @@ export const counterReducer = (state = initialState, action) => {
             return {...state, count: state.count + 1}
         case DECREMENT_COUNT:
             return {...state, count: state.count - 1}
+        case RESET_COUNT:
+            return {...state, count: state.count = 0}
         default:
             return state;
     }
