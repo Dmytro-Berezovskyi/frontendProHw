@@ -1,5 +1,6 @@
 import {Formik, Form, Field, ErrorMessage} from "formik";
 import { useDispatch } from "react-redux";
+import { v4 as uuid } from "uuid";
 
 import {addTodoRedux} from "../../store/slices/todoSlice";
 
@@ -17,9 +18,14 @@ export default function TodoFormRedux() {
         return errors;
     }
 
+    const handleSubmit = (values, { resetForm }) => {
+        dispatch(addTodoRedux({id: uuid(),title: values.title, completed:false}))
+        resetForm();
+    }
+
     return (
         <Formik
-            initialValues={{title: '',}} onSubmit={() => dispatch(addTodoRedux({title: 'vdfsv', completed: false}))} validate={validate}
+            initialValues={{title: '',}} onSubmit={handleSubmit} validate={validate}
         >
             {({ values }) => (
                 <Form>

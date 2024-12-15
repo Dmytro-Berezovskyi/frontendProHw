@@ -1,13 +1,13 @@
 import { useContext } from 'react';
 import { useSelector, useDispatch } from "react-redux";
-import { incrementCount, decrementCount, resetCount } from "../../store_old/actions/actions";
+import { increment, decrement, reset } from "../../store/slices/counterSlice";
 
 import {ThemeContext} from "../../context/ThemeContext";
 
 import './Counter.css';
 
 export default function Counter() {
-    const count = useSelector(state => state.count);
+    const { count } = useSelector(state => state.counter);
     const dispatch = useDispatch();
 
     const {theme} = useContext(ThemeContext);
@@ -15,14 +15,14 @@ export default function Counter() {
     return (
         <div className="counter-container">
             <div className={`counter-${theme}`}>
-                <button className="btn-counter" onClick={() => dispatch(decrementCount())}>-</button>
+                <button className="btn-counter" onClick={() => dispatch(decrement())}>-</button>
                 <div className="box-count">
                     <span className="count">{count}</span>
                 </div>
-                <button className="btn-counter" onClick={() => dispatch(incrementCount())}>+</button>
+                <button className="btn-counter" onClick={() => dispatch(increment())}>+</button>
             </div>
 
-            <button className={`btn-reset-${theme}`} onClick={() => dispatch(resetCount())}>Reset Counter</button>
+            <button className={`btn-reset-${theme}`} onClick={() => dispatch(reset())}>Reset Counter</button>
         </div>
     )
 }
