@@ -23,6 +23,10 @@ const todosSlice = createSlice({
     }
 })
 
-export const { addTodoRedux, deleteTodoRedux, toggleTodoRedux } = todosSlice.actions;
+export const {
+    addTodoRedux,
+    deleteTodoRedux,
+    toggleTodoRedux
+} = todosSlice.actions;
 
 export default todosSlice.reducer;
