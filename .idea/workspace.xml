@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="017a311c-1057-40b2-84df-6609a1ae6d32" name="Changes" comment="" />
+    <list default="true" id="017a311c-1057-40b2-84df-6609a1ae6d32" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/store/thunks/todoThunk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/TodoListRedux.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/TodoListRedux.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/slices/todoSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/slices/todoSlice.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +51,7 @@
   &quot;keyToString&quot;: {
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;l29hw2.2&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;l30hw1&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/dmytroberezovskyi/Desktop/ПрактикаFrontend/frontendPro/frontendProHw&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -185,7 +192,8 @@
       <workItem from="1734108023963" duration="598000" />
       <workItem from="1734168030184" duration="14721000" />
       <workItem from="1734282593294" duration="9320000" />
-      <workItem from="1734339898290" duration="2033000" />
+      <workItem from="1734339898290" duration="2708000" />
+      <workItem from="1734425383244" duration="3492000" />
     </task>
     <servers />
   </component>
