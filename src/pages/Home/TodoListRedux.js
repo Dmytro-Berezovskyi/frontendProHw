@@ -24,6 +24,7 @@ export default function TodoList () {
     return (
         <div>
             {loading && <div className='loading'>Loading...</div>}
+            {error && <div className='error'>Error:{error}</div>}
             {todos.map(todo =>
                 <TodoItemRedux key={todo.id} todo={todo} deleteTodo={deleteTodo} toggleTodo={toggleTodo}/>
             )}
