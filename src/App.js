@@ -1,4 +1,4 @@
-import {Routes, Route, NavLink} from 'react-router-dom';
+import {Routes, Route } from 'react-router-dom';
 
 import {ThemeProvider} from "./context/ThemeContext";
 
@@ -21,7 +21,6 @@ function App() {
                   <Route index element={<Home />}/>
                   <Route path="/login" element={<Login />}/>
                   <Route path="/about" element={<AboutMe />}/>
-
                   <Route path="/contacts" element={
                       <PrivateRoute>
                         <Contacts />

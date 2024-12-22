@@ -1,14 +1,13 @@
 import { useContext } from 'react';
 import {useNavigate, useLocation} from "react-router-dom";
-import { useSelector, useDispatch } from "react-redux";
-import { login, logOut } from "../../store/slices/userSlice";
+import { useDispatch } from "react-redux";
+import { login } from "../../store/slices/userSlice";
 
 import {ThemeContext} from "../../context/ThemeContext";
 
 import './Login.css';
 
 export default function Login() {
-    const authenticated = useSelector(state => state.user.isLogin);
     const location = useLocation();
     const navigate = useNavigate();
     const dispatch = useDispatch();
@@ -24,10 +23,10 @@ export default function Login() {
 
     return (
         <div className="login-form">
-            <div className="left-box"><h1>Welcome!</h1></div>
+            <div className={`left-box-${theme}`}><h1>Welcome!</h1></div>
             <div className="right-box">
                 <h2>Login</h2>
-                <button onClick={handleLogin}>Log In</button>
+                <button className={`btn-${theme}`} onClick={handleLogin}>Log In</button>
             </div>
         </div>
     )
