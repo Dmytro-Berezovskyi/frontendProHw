@@ -3,7 +3,7 @@ import { Divider, Flex, Tag } from 'antd';
 export default function AboutMe() {
     return (
         <div>
-            <div>
+            <div style={{width:'50%'}}>
                 <h1 style={{margin: 0, marginBottom: '20px'}}>Dmytro Berezovskyi</h1>
                 <h3>Junior Front-end developer</h3>
 
@@ -19,7 +19,7 @@ export default function AboutMe() {
 
                 <h4>Skills</h4>
                 <div className="underline"
-                     style={{borderBottom: '2px solid rgba(128, 128, 128, 0.2)', width: '100%'}}>
+                     style={{borderBottom: '2px solid rgba(128, 128, 128, 0.2)', width: '100%', marginBottom: '14px'}}>
                 </div>
                 <Flex gap="4px 0" wrap>
                     <Tag bordered={false} color="purple">GitHub</Tag>
