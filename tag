@@ -1,0 +1,11 @@
+GitHub
+Ajax
+DOM
+NPM
+JavaScript
+Webpack
+Redux-Thunk
+React
+OOP
+JSON
+Redux

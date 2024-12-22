@@ -25,12 +25,10 @@ import {NavLink, Outlet} from 'react-router-dom'
 //}
 
 import React from 'react';
-import { Breadcrumb, Layout, Menu, theme } from 'antd';
+import { Breadcrumb, Layout, theme } from 'antd';
+import {FacebookOutlined, InstagramOutlined, LinkedinOutlined} from '@ant-design/icons';
 const { Header, Content, Footer } = Layout;
-const items = new Array(15).fill(null).map((_, index) => ({
-    key: index + 1,
-    label: `nav ${index + 1}`,
-}));
+
 export default function LayoutAnt() {
     const {
         token: { colorBgContainer, borderRadiusLG },
@@ -47,7 +45,6 @@ export default function LayoutAnt() {
                 <div style={{display: 'flex', gap: '20px'}}>
                     <NavLink style={{color: 'white', textDecoration: 'none'}} to="/">Home</NavLink>
                     <NavLink style={{color: 'white', textDecoration: 'none'}} to="/about/">About Me</NavLink>
-                    <NavLink style={{color: 'white', textDecoration: 'none'}} to="/contacts/">Contacts</NavLink>
                     <NavLink style={{color: 'white', textDecoration: 'none'}} to="/form/">Form</NavLink>
                     <NavLink style={{color: 'white', textDecoration: 'none'}} to="/counter/">Counter</NavLink>
                     <button style={{background: 'transparent', color: 'white', border: 'none', cursor: 'pointer'}}>Change Theme</button>
@@ -63,9 +60,10 @@ export default function LayoutAnt() {
                         margin: '16px 0',
                     }}
                 >
-                    <Breadcrumb.Item>Home</Breadcrumb.Item>
-                    <Breadcrumb.Item>List</Breadcrumb.Item>
-                    <Breadcrumb.Item>App</Breadcrumb.Item>
+                    <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+                    <Breadcrumb.Item href="/about/">About Me</Breadcrumb.Item>
+                    <Breadcrumb.Item href="/form/">Form</Breadcrumb.Item>
+                    <Breadcrumb.Item href="/counter/">Counter</Breadcrumb.Item>
                 </Breadcrumb>
                 <div
                     style={{
@@ -80,10 +78,18 @@ export default function LayoutAnt() {
             </Content>
             <Footer
                 style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    gap: '10px',
                     textAlign: 'center',
                 }}
             >
-                Ant Design ©{new Date().getFullYear()} Created by Ant UED
+                <span style={{fontSize: '15px'}}>Contacts:</span>
+                <NavLink to="https://www.facebook.com"><FacebookOutlined style={{fontSize: '20px'}} /></NavLink>
+                <NavLink to="https://www.instagram.com"><InstagramOutlined style={{fontSize: '20px'}} /></NavLink>
+                <NavLink to="https://www.linkedin.com/feed/"><LinkedinOutlined  style={{fontSize: '20px'}} /></NavLink>
+
             </Footer>
         </Layout>
     );
