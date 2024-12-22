@@ -3,6 +3,7 @@ import {Routes, Route } from 'react-router-dom';
 import {ThemeProvider} from "./context/ThemeContext";
 
 import Layout from "./components/Layout/Layout";
+import LayoutAnt from "./components/Layout/Layout";
 import PrivateRoute from "./components/PrivateRoute";
 import Home from "./pages/Home";
 import AboutMe from "./pages/AboutMe";
@@ -17,7 +18,7 @@ function App() {
   return (
       <ThemeProvider>
           <Routes>
-              <Route path="/" element={<Layout />}>
+              <Route path="/" element={<LayoutAnt />}>
                   <Route index element={<Home />}/>
                   <Route path="/login" element={<Login />}/>
                   <Route path="/about" element={<AboutMe />}/>
