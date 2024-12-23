@@ -1,28 +1,4 @@
-//import {useContext} from "react";
 import {NavLink, Outlet} from 'react-router-dom'
-//
-//import {ThemeContext} from "../../context/ThemeContext";
-//
-//import './Layout.css'
-//
-//export default function Layout() {
-//    const {theme, toggleTheme} = useContext(ThemeContext);
-//
-//    return (
-//        <div className='container'>
-//            <div className={`header-${theme}`}>
-//                <NavLink style={{color: 'white', textDecoration: 'none'}} to="/">Home</NavLink>
-//                <NavLink style={{color: 'white', textDecoration: 'none'}} to="/about/">About Me</NavLink>
-//                <NavLink style={{color: 'white', textDecoration: 'none'}} to="/contacts/">Contacts</NavLink>
-//                <NavLink style={{color: 'white', textDecoration: 'none'}} to="/form/">Form</NavLink>
-//                <NavLink style={{color: 'white', textDecoration: 'none'}} to="/counter/">Counter</NavLink>
-//                <button onClick={toggleTheme} style={{background: 'transparent', color: 'white', border: 'none', cursor: 'pointer'}}>Change Theme</button>
-//            </div>
-//
-//            <Outlet />
-//        </div>
-//    )
-//}
 
 import React from 'react';
 import { Breadcrumb, Layout, theme } from 'antd';
@@ -39,12 +15,13 @@ export default function LayoutAnt() {
                 style={{
                     display: 'flex',
                     alignItems: 'center',
+                    marginBottom: '30px',
                 }}
             >
                 <div className="demo-logo" />
                 <div style={{display: 'flex', gap: '20px'}}>
                     <NavLink style={{color: 'white', textDecoration: 'none'}} to="/">Home</NavLink>
-                    <NavLink style={{color: 'white', textDecoration: 'none'}} to="/about/">About Me</NavLink>
+                    <NavLink style={{color: 'white', textDecoration: 'none'}} to="/resume/">Resume</NavLink>
                     <NavLink style={{color: 'white', textDecoration: 'none'}} to="/form/">Form</NavLink>
                     <NavLink style={{color: 'white', textDecoration: 'none'}} to="/counter/">Counter</NavLink>
                     <button style={{background: 'transparent', color: 'white', border: 'none', cursor: 'pointer'}}>Change Theme</button>
@@ -55,16 +32,6 @@ export default function LayoutAnt() {
                     padding: '0 48px',
                 }}
             >
-                <Breadcrumb
-                    style={{
-                        margin: '16px 0',
-                    }}
-                >
-                    <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-                    <Breadcrumb.Item href="/about/">About Me</Breadcrumb.Item>
-                    <Breadcrumb.Item href="/form/">Form</Breadcrumb.Item>
-                    <Breadcrumb.Item href="/counter/">Counter</Breadcrumb.Item>
-                </Breadcrumb>
                 <div
                     style={{
                         background: colorBgContainer,
@@ -86,9 +53,9 @@ export default function LayoutAnt() {
                 }}
             >
                 <span style={{fontSize: '15px'}}>Contacts:</span>
-                <NavLink to="https://www.facebook.com"><FacebookOutlined style={{fontSize: '20px'}} /></NavLink>
-                <NavLink to="https://www.instagram.com"><InstagramOutlined style={{fontSize: '20px'}} /></NavLink>
-                <NavLink to="https://www.linkedin.com/feed/"><LinkedinOutlined  style={{fontSize: '20px'}} /></NavLink>
+                <NavLink to="https://www.facebook.com" replace><FacebookOutlined style={{fontSize: '20px'}} /></NavLink>
+                <NavLink to="https://www.instagram.com" replace><InstagramOutlined style={{fontSize: '20px'}} /></NavLink>
+                <NavLink to="https://www.linkedin.com/feed/" replace><LinkedinOutlined  style={{fontSize: '20px'}} /></NavLink>
 
             </Footer>
         </Layout>
