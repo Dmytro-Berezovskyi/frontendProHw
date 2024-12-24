@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { Flex, Tag, Timeline } from 'antd';
+import { Flex, Tag, Timeline, Divider, Badge } from 'antd';
 import { CheckCircleTwoTone } from '@ant-design/icons';
 
 import { ReactComponent as DiplomaSVG } from "../../assets/icons/diploma.svg";
@@ -12,20 +12,15 @@ export default function Resume() {
                 <h1 style={{margin: 0, marginBottom: '20px'}}>Dmytro Berezovskyi</h1>
                 <h3>Junior Front-end developer</h3>
 
-                <h4>Summary</h4>
-                <div className="underline"
-                     style={{borderBottom: '2px solid rgba(128, 128, 128, 0.2)', width: '100%'}}>
-                </div>
+                <h4 style={{marginBottom: 0}}>Summary</h4>
+                <Divider style={{borderTop: '2px solid rgba(128, 128, 128, 0.2)', margin: '10px 0 10px 0'}}/>
                 <p>
                     I am studying Front-end development. I aspire to become an excellent specialist in my field.
                     During my studies, I have acquired skills in JavaScript, React, Redux, GitHub.
-                    I am constantly trying to improve my English.
                 </p>
 
-                <h4>Skills</h4>
-                <div className="underline"
-                     style={{borderBottom: '2px solid rgba(128, 128, 128, 0.2)', width: '100%', marginBottom: '14px'}}>
-                </div>
+                <h4 style={{marginBottom: 0}}>Skills</h4>
+                <Divider style={{borderTop: '2px solid rgba(128, 128, 128, 0.2)', margin: '10px 0 10px 0'}}/>
                 <Flex gap="4px 0" wrap>
                     <Tag bordered={false} color="purple">GitHub</Tag>
                     <Tag bordered={false} color="purple">Ajax</Tag>
@@ -40,10 +35,8 @@ export default function Resume() {
                     <Tag bordered={false} color="purple">Redux</Tag>
                 </Flex>
 
-                <h4>Additional courses and trainings</h4>
-                <div className="underline"
-                     style={{borderBottom: '2px solid rgba(128, 128, 128, 0.2)', width: '100%', marginBottom: '14px'}}>
-                </div>
+                <h4 style={{marginBottom: 0}}>Additional courses and trainings</h4>
+                <Divider style={{borderTop: '2px solid rgba(128, 128, 128, 0.2)', margin: '10px 0 10px 0'}}/>
                 <Timeline
                     items={[
                         {
@@ -79,10 +72,10 @@ export default function Resume() {
 
             <div style={{width: '30%'}}>
                 <img src={PhotoIMG} alt="photo" style={{width: 300, height: 300, borderRadius: 10}} />
-                <h4>Contacts</h4>
-                <div className="underline"
-                     style={{borderBottom: '2px solid rgba(128, 128, 128, 0.2)', width: '100%', marginBottom: '14px'}}>
-                </div>
+
+                <h4 style={{marginBottom: 0}}>Contacts</h4>
+                <Divider style={{borderTop: '2px solid rgba(128, 128, 128, 0.2)', margin: '10px 0 10px 0'}}/>
+
                 <div style={{display: 'flex', flexFlow: 'column nowrap', gap: '5px', marginBottom: '5px'}}>
                     <h5 style={{color: 'rgba(128, 128, 128, 0.6)', margin: '0'}}>Location</h5>
                     <span>Prague, Prague, Czech Republic</span>
@@ -111,16 +104,14 @@ export default function Resume() {
                     <NavLink to="https://github.com/Dmytro-Berezovskyi">https://github.com/Dmytro-Berezovskyi</NavLink>
                 </div>
 
-                <h4>Languages</h4>
-                <div className="underline"
-                     style={{borderBottom: '2px solid rgba(128, 128, 128, 0.2)', width: '100%', marginBottom: '14px'}}>
-                </div>
+                <h4 style={{marginBottom: 0}}>Languages</h4>
+                <Divider style={{borderTop: '2px solid rgba(128, 128, 128, 0.2)', margin: '10px 0 10px 0'}}/>
 
                 <div style={{display: 'flex', flexFlow: 'column nowrap', gap: '5px'}}>
-                    <span>Ukrainian C2</span>
-                    <span>Russian C1</span>
-                    <span>Czech A2</span>
-                    <span>English A1</span>
+                    <Badge color='#1677FF' text='Ukrainian C2' />
+                    <Badge color='#1677FF' text='Russian C1' />
+                    <Badge color='#1677FF' text='Czech B1' />
+                    <Badge color='#1677FF' text='English A2' />
                 </div>
             </div>
 

@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="017a311c-1057-40b2-84df-6609a1ae6d32" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/Resume/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Layout/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/Layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/AboutMe/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/ThemeContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/ThemeContext.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home/TodoForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/TodoForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Login/Login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Login/Login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tag" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Resume/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Resume/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +200,8 @@
       <workItem from="1734857350447" duration="1330000" />
       <workItem from="1734879133513" duration="3506000" />
       <workItem from="1734892907641" duration="7721000" />
-      <workItem from="1734979175519" duration="8670000" />
+      <workItem from="1734979175519" duration="9014000" />
+      <workItem from="1735049960741" duration="7554000" />
     </task>
     <servers />
   </component>

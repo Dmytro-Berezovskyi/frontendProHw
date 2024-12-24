@@ -1,6 +1,6 @@
 import {Formik, Form, Field, ErrorMessage} from "formik";
 
-import { Input } from 'antd';
+import { Input, Button } from 'antd';
 
 export default function TodoForm({addTodo}) {
     const handleSubmit = (values, {resetForm}) => {
@@ -22,18 +22,20 @@ export default function TodoForm({addTodo}) {
         <Formik
             initialValues={{title: '',}} onSubmit={handleSubmit} validate={validate}
         >
-            {({ values }) => (
+            {({ handleChange, handleBlur, values }) => (
                 <Form>
                     <div className='input-form'>
                         <div className='input-err'>
-                            <Field
-                                type='text'
-                                placeholder='Enter new task'
-                                name='title'
+                            <Input
+                                name="title"
+                                placeholder="Enter new task"
+                                value={values.title}
+                                onChange={handleChange}
+                                onBlur={handleBlur}
                             />
                             <ErrorMessage name='title' className='error' component='span'/>
                         </div>
-                        <button type='submit'>Submit</button>
+                        <Button type='primary' htmlType='submit' style={{height: '100%'}}>Submit</Button>
                     </div>
                 </Form>
             )}
