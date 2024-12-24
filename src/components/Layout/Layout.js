@@ -17,7 +17,7 @@ export default function LayoutAnt() {
         <ConfigProvider
             theme={{
                 token: {
-                    colorBgContainer:  themeMode === 'dark' ? '#1f1f1f' : '#ffffff', // Темна/світла тема
+                    colorBgContainer:  themeMode === 'dark' ? '#1f1f1f' : '#ffffff'
                 },
             }}
         >
