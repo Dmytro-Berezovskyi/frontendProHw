@@ -17,7 +17,7 @@ export default function LayoutAnt() {
         <ConfigProvider
             theme={{
                 token: {
-                    colorBgContainer:  themeMode === 'dark' ? '#1f1f1f' : '#ffffff'
+                    colorBgContainer:  themeMode === 'dark' ? '#292929' : '#d6d3ce'
                 },
             }}
         >
@@ -27,22 +27,23 @@ export default function LayoutAnt() {
                         display: 'flex',
                         alignItems: 'center',
                         marginBottom: '30px',
-                        backgroundColor: themeMode === 'dark' ? '#1f1f1f' : '#ffffff',
+                        backgroundColor: themeMode === 'dark' ? '#292929' : '#d6d3ce',
                     }}
                 >
-                    <div className="demo-logo" />
+                    <div className="demo-logo"/>
                     <div style={{display: 'flex', gap: '20px'}}>
                         <NavLink style={{color: 'white', textDecoration: 'none'}} to="/">Home</NavLink>
                         <NavLink style={{color: 'white', textDecoration: 'none'}} to="/resume/">Resume</NavLink>
                         <NavLink style={{color: 'white', textDecoration: 'none'}} to="/form/">Form</NavLink>
                         <NavLink style={{color: 'white', textDecoration: 'none'}} to="/counter/">Counter</NavLink>
-                        <button
-                            style={{background: 'transparent', color: 'white', border: 'none', cursor: 'pointer'}}
-                            onClick={toggleTheme}
-                        >
-                            Change Theme
-                        </button>
+
                     </div>
+                    <button
+                        style={{background: 'transparent', color: 'white', border: 'none', cursor: 'pointer', position: 'absolute', right: '50px'}}
+                        onClick={toggleTheme}
+                    >
+                        Change Theme
+                    </button>
                 </Header>
                 <Content
                     style={{
