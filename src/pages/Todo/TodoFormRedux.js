@@ -43,7 +43,7 @@ export default function TodoFormRedux() {
                             />
                             <ErrorMessage name='title' className='error' component='span'/>
                         </div>
-                        <Button type='primary' htmlType='submit' style={{height: '100%'}}>Submit</Button>
+                        <Button type='primary' htmlType='submit' style={{height: '100%'}}>Add Task</Button>
                     </div>
                 </Form>
             )}
