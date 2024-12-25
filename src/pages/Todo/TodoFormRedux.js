@@ -2,6 +2,8 @@ import {Formik, Form, Field, ErrorMessage} from "formik";
 import { useDispatch } from "react-redux";
 import { v4 as uuid } from "uuid";
 
+import { Input, Button } from 'antd';
+
 import {addTodoRedux} from "../../store/slices/todoSlice";
 
 
@@ -27,18 +29,21 @@ export default function TodoFormRedux() {
         <Formik
             initialValues={{title: '',}} onSubmit={handleSubmit} validate={validate}
         >
-            {({ values }) => (
+            {({ handleBlur, handleChange, values }) => (
                 <Form>
-                    <div className='input-form'>
+                    <div className='input-form' style={{marginBottom:'10px'}}>
                         <div className='input-err'>
-                            <Field
-                                type='text'
-                                placeholder='Enter new task'
-                                name='title'
+                            <Input
+                                name="title"
+                                placeholder="Enter new task"
+                                value={values.title}
+                                onChange={handleChange}
+                                onBlur={handleBlur}
+                                style={{backgroundColor: 'white'}}
                             />
                             <ErrorMessage name='title' className='error' component='span'/>
                         </div>
-                        <button type='submit'>Submit</button>
+                        <Button type='primary' htmlType='submit' style={{height: '100%'}}>Submit</Button>
                     </div>
                 </Form>
             )}

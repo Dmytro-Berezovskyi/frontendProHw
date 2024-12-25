@@ -1,5 +1,7 @@
 import { useSelector } from "react-redux";
 
+import { Button } from 'antd';
+
 export default function TodoItem ({todo, deleteTodo, toggleTodo}) {
     const todosObject = useSelector(state => state.todos)
 
@@ -11,7 +13,12 @@ export default function TodoItem ({todo, deleteTodo, toggleTodo}) {
             >
                 {todo.title}
             </span>
-            <button onClick={() => deleteTodo(todo.id)}>Delete</button>
+            <Button
+                style={{backgroundColor: 'white'}}
+                onClick={() => deleteTodo(todo.id)}
+            >
+                Delete
+            </Button>
         </div>
     )
 }

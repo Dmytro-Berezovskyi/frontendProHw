@@ -24,7 +24,7 @@ export default function TodoForm({addTodo}) {
         >
             {({ handleChange, handleBlur, values }) => (
                 <Form>
-                    <div className='input-form'>
+                    <div className='input-form' style={{marginBottom:'10px'}}>
                         <div className='input-err'>
                             <Input
                                 name="title"
@@ -32,6 +32,7 @@ export default function TodoForm({addTodo}) {
                                 value={values.title}
                                 onChange={handleChange}
                                 onBlur={handleBlur}
+                                style={{backgroundColor: 'white'}}
                             />
                             <ErrorMessage name='title' className='error' component='span'/>
                         </div>

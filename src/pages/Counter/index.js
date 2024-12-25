@@ -10,11 +10,11 @@ export default function Counter() {
     const { count } = useSelector(state => state.counter);
     const dispatch = useDispatch();
 
-    const {theme} = useContext(ThemeContext);
+    const {themeMode} = useContext(ThemeContext);
 
     return (
         <div className="counter-container">
-            <div className={`counter-${theme}`}>
+            <div className={`counter-${themeMode}`}>
                 <button className="btn-counter" onClick={() => dispatch(decrement())}>-</button>
                 <div className="box-count">
                     <span className="count">{count}</span>
@@ -22,7 +22,7 @@ export default function Counter() {
                 <button className="btn-counter" onClick={() => dispatch(increment())}>+</button>
             </div>
 
-            <button className={`btn-reset-${theme}`} onClick={() => dispatch(reset())}>Reset Counter</button>
+            <button className={`btn-reset-${themeMode}`} onClick={() => dispatch(reset())}>Reset Counter</button>
         </div>
     )
 }

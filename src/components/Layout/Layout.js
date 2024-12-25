@@ -33,8 +33,7 @@ export default function LayoutAnt() {
                     <div className="demo-logo"/>
                     <div style={{display: 'flex', gap: '20px'}}>
                         <NavLink style={{color: 'white', textDecoration: 'none'}} to="/">Home</NavLink>
-                        <NavLink style={{color: 'white', textDecoration: 'none'}} to="/resume/">Resume</NavLink>
-                        <NavLink style={{color: 'white', textDecoration: 'none'}} to="/form/">Form</NavLink>
+                        <NavLink style={{color: 'white', textDecoration: 'none'}} to="/todo/">Todo</NavLink>
                         <NavLink style={{color: 'white', textDecoration: 'none'}} to="/counter/">Counter</NavLink>
 
                     </div>
