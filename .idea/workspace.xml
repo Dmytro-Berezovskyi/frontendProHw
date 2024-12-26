@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="017a311c-1057-40b2-84df-6609a1ae6d32" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Todo/Todo.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Todo/Todo.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Todo/TodoForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Todo/TodoForm.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +49,7 @@
     "Jest.Todo.Enters the number and letters in input.executor": "Run",
     "Jest.Todo.adds new todo item.executor": "Run",
     "Jest.Todo.executor": "Run",
+    "Jest.Todo.toggle todo item.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "l33hw1",
     "last_opened_file_path": "/Users/dmytroberezovskyi/Desktop/ПрактикаFrontend/frontendPro/frontendProHw",
@@ -127,9 +126,23 @@
       </test-names>
       <method v="2" />
     </configuration>
+    <configuration name="Todo.toggle todo item" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/pages/Todo/Todo.test.js" />
+      <test-names>
+        <test-name value="Todo" />
+        <test-name value="toggle todo item" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Jest.Todo" />
+        <item itemvalue="Jest.Todo.toggle todo item" />
         <item itemvalue="Jest.Todo.Enters empty values in input" />
         <item itemvalue="Jest.Todo.Enters the number and letters in input" />
         <item itemvalue="Jest.Todo.adds new todo item" />
@@ -265,23 +278,11 @@
       <workItem from="1734979175519" duration="9014000" />
       <workItem from="1735049960741" duration="7554000" />
       <workItem from="1735148968482" duration="8258000" />
-      <workItem from="1735198991476" duration="4466000" />
+      <workItem from="1735198991476" duration="6081000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/pages/Todo/Todo.test.js</url>
-          <line>17</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
