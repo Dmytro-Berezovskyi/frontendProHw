@@ -33,10 +33,11 @@ export default function TodoForm({addTodo}) {
                                 onChange={handleChange}
                                 onBlur={handleBlur}
                                 style={{backgroundColor: 'white'}}
+                                data-testid="first-input-todo"
                             />
-                            <ErrorMessage name='title' className='error' component='span'/>
+                            <ErrorMessage name='title' className='error' component='span' data-testid="first-error-msg"/>
                         </div>
-                        <Button type='primary' htmlType='submit' style={{height: '100%'}}>Add Task</Button>
+                        <Button type='primary' htmlType='submit' style={{height: '100%'}} data-testid="first-btn-todo">Add Task</Button>
                     </div>
                 </Form>
             )}
