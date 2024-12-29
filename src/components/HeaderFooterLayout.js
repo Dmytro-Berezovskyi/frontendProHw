@@ -1,4 +1,5 @@
 import { NavLink, Outlet } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { toggleThemeMode }  from "../store/slices/themeSlice";
 
@@ -8,11 +9,11 @@ const { Header, Content, Footer } = Layout;
 
 const items = [
     {
-        key: '1',
+        key: '/',
         label: <NavLink to="/" style={{ textDecoration: 'none' }}>Home</NavLink>,
     },
     {
-        key: '2',
+        key: '/about',
         label: <NavLink to="/about" style={{ textDecoration: 'none' }}>About</NavLink>,
     },
 ];
@@ -21,6 +22,9 @@ export default function HeaderFooterLayout () {
     const { themeMode } = useSelector((state) => state.theme);
     console.log(themeMode);
     const dispatch = useDispatch();
+
+    const location = useLocation();
+    const currentPath = location.pathname;
 
     const {
         token: { colorBgContainer, borderRadiusLG },
@@ -43,7 +47,7 @@ export default function HeaderFooterLayout () {
                 <Menu
                     theme="dark"
                     mode="horizontal"
-                    defaultSelectedKeys={['1']}
+                    defaultSelectedKeys={[currentPath]}
                     items={items}
                     style={{ flex: 1, minWidth: 0 }}
                 />
@@ -53,7 +57,7 @@ export default function HeaderFooterLayout () {
                     padding: '48px 48px',
                     margin: '0 48px',
                     background: colorBgContainer,
-                    minHeight: '380px',
+                    minHeight: '82vh',
                     borderRadius: borderRadiusLG,
                 }}
             >

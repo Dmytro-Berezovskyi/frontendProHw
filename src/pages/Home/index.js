@@ -1,76 +1,109 @@
 import {Form, Field, ErrorMessage, Formik} from "formik";
 import {Select, DatePicker, Button} from "antd";
-import {useState} from "react";
+import dayjs from "dayjs";
 
 export default function Home() {
     const initialValues = {
-        description: '',
-        checkIn: '',
-        checkOut: '',
+        destination: null,
+        checkIn: null,
+        checkOut: null,
+        adults: 1,
+        children: 0,
     }
 
-    const [date, setDate] = useState('');
-    const onChange = (date, dateString) => {
-        setDate(dateString);
-        console.log(dateString);
-    };
-
-    const hendleSubmit = (e) => {
-        e.preventDefault();
-        console.log('Submitting...');
+    const hendleSubmit = (values, { resetForm }) => {
+        console.log("Form Values:", values);
+        resetForm();
     }
     return (
         <>
             <Formik
-                initialValues={{initialValues}}
+                initialValues={initialValues}
                 onSubmit={hendleSubmit}
             >
-                {({ values }) => (
+                {({ setFieldValue, setFieldTouched, values }) => (
                     <Form style={{display: 'flex', gap: '10px', justifyContent: 'center'}}>
                         <div style={{display: 'flex', gap: '10px', justifyContent: 'center'}}>
-                            <Select
-                                showSearch
-                                style={{ width: 200 }}
-                                placeholder="Destination"
-                                optionFilterProp="label"
-                                filterSort={(optionA, optionB) =>
-                                    (optionA?.label ?? '').toLowerCase().localeCompare((optionB?.label ?? '').toLowerCase())
-                                }
-                                options={[
-                                    {
-                                        value: '1',
-                                        label: 'Kyiv',
-                                    },
-                                    {
-                                        value: '2',
-                                        label: 'Dnipro',
-                                    },
-                                    {
-                                        value: '3',
-                                        label: 'Kharkiv',
-                                    },
-                                    {
-                                        value: '4',
-                                        label: 'Prague',
-                                    },
-                                    {
-                                        value: '5',
-                                        label: 'Brno',
-                                    },
-                                    {
-                                        value: '6',
-                                        label: 'Plzen',
-                                    },
-                                ]}
-                            />
+                            <Field name="destination">
+                                {({ field }) => (
+                                    <Select
+                                        {...field}
+                                        showSearch
+                                        style={{ width: 200 }}
+                                        placeholder="Destination"
+                                        optionFilterProp="label"
+                                        filterSort={(optionA, optionB) =>
+                                            (optionA?.label ?? '').toLowerCase().localeCompare((optionB?.label ?? '').toLowerCase())
+                                        }
+                                        onChange={(values) => setFieldValue('destination', values)}
+                                        options={[
+                                            {
+                                                value: 'Kyiv',
+                                                label: 'Kyiv',
+                                            },
+                                            {
+                                                value: 'Dnipro',
+                                                label: 'Dnipro',
+                                            },
+                                            {
+                                                value: 'Kharkiv',
+                                                label: 'Kharkiv',
+                                            },
+                                            {
+                                                value: 'Prague',
+                                                label: 'Prague',
+                                            },
+                                            {
+                                                value: 'Brno',
+                                                label: 'Brno',
+                                            },
+                                            {
+                                                value: 'Plzen',
+                                                label: 'Plzen',
+                                            },
+                                        ]}
+                                    />
+                                )}
+                            </Field>
 
-                            <DatePicker onChange={onChange} needConfirm />
-                            <DatePicker onChange={onChange} needConfirm />
+                            <Field name="checkIn">
+                                {({ field }) => (
+                                    <DatePicker
+                                        {...field}
+                                        value={values.checkIn ? dayjs(values.checkIn) : null}
+                                        onChange={(date) => setFieldValue("checkIn", date ? date.format("YYYY-MM-DD") : null)}
+                                        onBlur={() => setFieldTouched("checkIn", true)}
+                                        needConfirm
+                                        placeholder="Check In"
+                                    />
+                                )}
+                            </Field>
+
+                            <Field name="checkOut">
+                                {({ field }) => (
+                                    <DatePicker
+                                        {...field}
+                                        value={values.checkOut ? dayjs(values.checkOut) : null}
+                                        onChange={(date) => setFieldValue("checkOut", date ? date.format("YYYY-MM-DD") : null)}
+                                        onBlur={() => setFieldTouched("checkIn", true)}
+                                        needConfirm
+                                        placeholder="Check Out"
+                                    />
+                                )}
+                            </Field>
                         </div>
 
                         <div style={{display: 'flex', gap: '10px', justifyContent: 'center'}}>
-                            <Button>Adults</Button>
-                            <Button>Children</Button>
+                            <Button
+                                onClick={() => setFieldValue("adults", values.adults + 1)}
+                            >
+                                Adults {values.adults}
+                            </Button>
+                            <Button
+                                onClick={() => setFieldValue("children", values.children + 1)}
+                            >
+                                Children {values.children}
+                            </Button>
                             <Button type="primary" htmlType="submit">Submit</Button>
                         </div>
                     </Form>
