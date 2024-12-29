@@ -1,11 +1,6 @@
 import {Form, Field, ErrorMessage, Formik} from "formik";
-import {Select, DatePicker, DatePickerProps, Button} from "antd";
-import type { Dayjs } from 'dayjs';
-//import {Input} from "antd";
-
-const onChange: DatePickerProps<Dayjs[]>['onChange'] = (date, dateString) => {
-    console.log(date, dateString);
-};
+import {Select, DatePicker, Button} from "antd";
+import {useState} from "react";
 
 export default function Home() {
     const initialValues = {
@@ -13,6 +8,12 @@ export default function Home() {
         checkIn: '',
         checkOut: '',
     }
+
+    const [date, setDate] = useState('');
+    const onChange = (date, dateString) => {
+        setDate(dateString);
+        console.log(dateString);
+    };
 
     const hendleSubmit = (e) => {
         e.preventDefault();
