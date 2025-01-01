@@ -1,8 +1,18 @@
+import { useEffect } from "react";
+import { useDispatch, useSelector } from 'react-redux';
 import {Form, Field, ErrorMessage, Formik} from "formik";
 import {Select, DatePicker, Button} from "antd";
 import dayjs from "dayjs";
+import {fetchDestination} from "../../store/thunks/destinationThunk";
 
 export default function Home() {
+    const dispatch = useDispatch();
+    const destination = useSelector((state) => state.destination);
+
+    useEffect(() => {
+        dispatch(fetchDestination());
+    },[dispatch])
+
     const initialValues = {
         destination: null,
         checkIn: null,
@@ -36,32 +46,7 @@ export default function Home() {
                                             (optionA?.label ?? '').toLowerCase().localeCompare((optionB?.label ?? '').toLowerCase())
                                         }
                                         onChange={(values) => setFieldValue('destination', values)}
-                                        options={[
-                                            {
-                                                value: 'Kyiv',
-                                                label: 'Kyiv',
-                                            },
-                                            {
-                                                value: 'Dnipro',
-                                                label: 'Dnipro',
-                                            },
-                                            {
-                                                value: 'Kharkiv',
-                                                label: 'Kharkiv',
-                                            },
-                                            {
-                                                value: 'Prague',
-                                                label: 'Prague',
-                                            },
-                                            {
-                                                value: 'Brno',
-                                                label: 'Brno',
-                                            },
-                                            {
-                                                value: 'Plzen',
-                                                label: 'Plzen',
-                                            },
-                                        ]}
+                                        options={destination.destination}
                                     />
                                 )}
                             </Field>

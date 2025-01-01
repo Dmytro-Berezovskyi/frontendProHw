@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { fetchDestination } from '../thunks/hotelThunk';
+import { fetchDestination } from '../thunks/destinationThunk';
 
 const initialState = {
     destination: [],
