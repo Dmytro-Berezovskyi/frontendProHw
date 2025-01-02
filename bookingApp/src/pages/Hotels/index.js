@@ -1,19 +1,24 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import {Divider, Pagination} from "antd";
+
 import { fetchHotels } from "../../store/thunks/hotelsThunk";
 
 import HotelsItem from "./HotelsItem";
-import HotelsGrid from "./HotelsGrid";
-import {Divider, Pagination} from "antd";
+
 
 export default function Hotels() {
     const hotels = useSelector((state) => state.hotels)
     const dispatch = useDispatch();
 
+    //const handlePageChange = (page) => {
+    //    dispatch(fetchHotels(page));
+    //};
+
     useEffect(() => {
         dispatch(fetchHotels());
     },[dispatch])
-    console.log(hotels);
+
     return (
         <>
             <Divider orientation="left"><h1>Hotels</h1></Divider>

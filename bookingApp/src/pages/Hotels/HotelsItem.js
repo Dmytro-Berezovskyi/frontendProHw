@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchHotels } from "../../store/thunks/hotelsThunk";
-
 import { Col, Divider, Row } from 'antd';
+
+import { fetchHotels } from "../../store/thunks/hotelsThunk";
 
 export default function HotelsItem() {
     const hotels = useSelector((state) => state.hotels)
@@ -11,7 +11,8 @@ export default function HotelsItem() {
     useEffect(() => {
         dispatch(fetchHotels());
     },[dispatch])
-    console.log(hotels.hotels[3]);
+    console.log(hotels)
+
     const hotelCard = hotels.hotels.map((hotel) => {
         return <Col span={6}>
             <div style={{display: 'flex', flexDirection: 'column'}}>
@@ -27,7 +28,7 @@ export default function HotelsItem() {
     });
     return (
         <>
-        <Row justify="center" style={{width:'100%', gap:'10px'}}>
+            <Row justify="center" style={{width:'100%', gap:'10px'}}>
                 {hotelCard}
             </Row>
         </>

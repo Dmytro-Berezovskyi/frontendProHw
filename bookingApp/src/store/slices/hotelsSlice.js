@@ -29,6 +29,4 @@ const hotelsSlice = createSlice({
     }
 })
 
-export const { fetchHotelsStarted, fetchHotelsSuccess, fetchHotelsError } = hotelsSlice.actions;
-
 export default hotelsSlice.reducer;

@@ -4,7 +4,7 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 
 const API_URL = process.env.REACT_APP_API_URL;
 
-export const fetchHotels = createAsyncThunk('hotels/fetchDestination', async (_, { rejectWithValue }) => {
+export const fetchHotels = createAsyncThunk('hotels/fetchHotels', async (_, { rejectWithValue }) => {
     try {
         const hotels = await axios.get(`${API_URL}/hotels`);
 

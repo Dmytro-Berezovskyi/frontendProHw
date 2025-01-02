@@ -3,11 +3,16 @@ import { useDispatch, useSelector } from 'react-redux';
 import {Form, Field, ErrorMessage, Formik} from "formik";
 import {Select, DatePicker, Button} from "antd";
 import dayjs from "dayjs";
-import {fetchDestination} from "../../store/thunks/destinationThunk";
+import { fetchDestination } from "../../store/thunks/destinationThunk";
+import { selectedHotels } from "../../store/thunks/selectedHotelsThunk";
+
+import DestinationHotels from "../DestinationHotels";
+
 
 export default function Home() {
     const dispatch = useDispatch();
     const destination = useSelector((state) => state.destination);
+    const hotels = useSelector((state) => state.selectedHotels);
 
     useEffect(() => {
         dispatch(fetchDestination());
@@ -21,15 +26,23 @@ export default function Home() {
         children: 0,
     }
 
-    const hendleSubmit = (values, { resetForm }) => {
+    const handleSubmit = (values, { resetForm }) => {
         console.log("Form Values:", values);
+        const selectedCity = destination.destination.find((destination) => values.destination === destination.value)
+        console.log("City:", selectedCity);
+        if (selectedCity) {
+            dispatch(selectedHotels(selectedCity.label));
+        }
+        console.log("Hotels: " + hotels);
         resetForm();
     }
+
+
     return (
         <>
             <Formik
                 initialValues={initialValues}
-                onSubmit={hendleSubmit}
+                onSubmit={handleSubmit}
             >
                 {({ setFieldValue, setFieldTouched, values }) => (
                     <Form style={{display: 'flex', gap: '10px', justifyContent: 'center'}}>
@@ -104,6 +117,7 @@ export default function Home() {
                     you a curated selection of accommodations tailored to your preferences. With intuitive tools and
                     personalized recommendations, Plan&Stay ensures your next adventure starts with the perfect booking.
                 </p>
+                <DestinationHotels hotels={hotels} />
             </div>
         </>
     )
