@@ -11,7 +11,7 @@ app.get('/destination', (req, res) => {
     res.json(data.destination);
 });
 
-app.get('/hotels', (req, res) => {
+app.get(`/hotels`, (req, res) => {
     res.json(data.hotels);
 });
 app.post('/hotels', (req, res) => {
