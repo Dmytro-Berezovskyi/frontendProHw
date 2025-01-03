@@ -1,31 +1,30 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 
-import { selectedHotels } from "../thunks/selectedHotelsThunk";
-
+import { fetchSelectedHotels } from "../thunks/selectedHotelsThunk";
 
 const initialState = {
     selectedHotels: [],
     loading: false,
-    error: '',
+    error: "",
 };
 
 const selectedHotelsSlice = createSlice({
-    name: 'selectedHotels',
+    name: "selectedHotels",
     initialState,
     reducers: {},
     extraReducers: (builder) => {
         builder
-            .addCase(selectedHotels.pending, (state, action) => {
+            .addCase(fetchSelectedHotels.pending, (state, action) => {
                 state.loading = true;
-                state.error = '';
+                state.error = "";
             })
-            .addCase(selectedHotels.fulfilled, (state, action) => {
+            .addCase(fetchSelectedHotels.fulfilled, (state, action) => {
                 state.loading = false;
-                state.error = '';
+                state.error = "";
                 state.selectedHotels = action.payload;
                 console.log("Payload received:", action.payload);
             })
-            .addCase(selectedHotels.rejected, (state, action) => {
+            .addCase(fetchSelectedHotels.rejected, (state, action) => {
                 state.loading = false;
                 state.error = action.payload;
             })

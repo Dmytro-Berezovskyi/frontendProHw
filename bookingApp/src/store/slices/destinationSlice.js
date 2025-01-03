@@ -1,25 +1,26 @@
-import { createSlice } from '@reduxjs/toolkit';
-import { fetchDestination } from '../thunks/destinationThunk';
+import { createSlice } from "@reduxjs/toolkit";
+
+import { fetchDestination } from "../thunks/destinationThunk";
 
 const initialState = {
     destination: [],
     loading: false,
-    error: '',
+    error: "",
 };
 
 const destinationSlice = createSlice({
-    name: 'destination',
+    name: "destination",
     initialState,
     reducers: {},
     extraReducers: (builder) => {
         builder
             .addCase(fetchDestination.pending, (state) => {
                 state.loading = true;
-                state.error = '';
+                state.error = "";
             })
             .addCase(fetchDestination.fulfilled, (state, action) => {
                 state.loading = false;
-                state.error = '';
+                state.error = "";
                 state.destination = action.payload;
             })
             .addCase(fetchDestination.rejected, (state, action) => {
@@ -28,7 +29,5 @@ const destinationSlice = createSlice({
             })
     }
 })
-
-export const { fetchDestinationStarted, fetchDestinationSuccess, fetchDestinationError } = destinationSlice.actions;
 
 export default destinationSlice.reducer;
