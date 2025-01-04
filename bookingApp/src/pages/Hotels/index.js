@@ -10,7 +10,6 @@ export default function Hotels() {
             </Divider>
             <h4 style={{marginLeft: "4%", color: "rgba(0,0,0,0.50)"}}>Choose the best hotel for yourself</h4>
             <HotelsItem/>
-            <Pagination align="center" defaultCurrent={1} total={5}/>
         </>
     )
 }

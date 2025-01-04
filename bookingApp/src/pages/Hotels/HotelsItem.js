@@ -3,10 +3,11 @@ import { useDispatch, useSelector } from "react-redux";
 
 import { fetchHotels } from "../../store/thunks/hotelsThunk";
 
-import { Col, Divider, Row } from "antd";
+import {Col, Divider, Pagination, Row} from "antd";
 
 import { hotelsPhoto } from "../../helpers/hotelsPhoto";
 
+console.log("API URL:", process.env.REACT_APP_API_URL);
 export default function HotelsItem() {
     const hotels = useSelector((state) => state.hotels)
     const dispatch = useDispatch();
@@ -16,9 +17,16 @@ export default function HotelsItem() {
         return hotelsPhoto[randomIndex];
     }
 
+    const handlePageChange = (page) => {
+        dispatch(fetchHotels({page: page}));
+        console.log("PAGE" ,page);
+    };
+
     useEffect(() => {
-        dispatch(fetchHotels());
-    },[dispatch])
+        dispatch(fetchHotels({ page: 1}));
+    },[dispatch]);
+
+    console.log("Hotels" , hotels);
 
     const hotelCard = hotels.hotels.map((hotel) => {
         return <Col span={6}>
@@ -38,6 +46,13 @@ export default function HotelsItem() {
             <Row justify="space-around" style={{width:"100%", gap:"10px"}}>
                 {hotelCard}
             </Row>
+            <Pagination
+                align="center"
+                current={hotels.currentPage}
+                total={hotels.total}
+                pageSize={6}
+                onChange={handlePageChange}
+            />
         </>
     )
 }

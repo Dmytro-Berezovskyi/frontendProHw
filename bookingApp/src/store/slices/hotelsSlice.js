@@ -6,6 +6,8 @@ const initialState = {
     hotels: [],
     loading: false,
     error: "",
+    total: 0,
+    currentPage: 1,
 };
 
 const hotelsSlice = createSlice({
@@ -21,11 +23,12 @@ const hotelsSlice = createSlice({
             .addCase(fetchHotels.fulfilled, (state, action) => {
                 state.loading = false;
                 state.error = "";
-                state.hotels = action.payload;
+                state.hotels = action.payload.hotels;
+                state.total = action.payload.total;
             })
             .addCase(fetchHotels.rejected, (state, action) => {
                 state.loading = false;
-                state.error = action.payload;
+                state.error = action.payload || "Unknown error";
             })
     }
 })
