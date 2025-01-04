@@ -12,7 +12,16 @@ app.get("/destination", (req, res) => {
 });
 
 app.get("/hotels", (req, res) => {
-    res.json(data.hotels);
+    const { page= 1, limit = 6 } = req.query;
+    const startIndex = (page - 1) * limit;
+    const endIndex = startIndex + parseInt(limit);
+
+    const paginatedHotels = data.hotels.slice(startIndex, endIndex);
+
+    res.status(200).json ({
+        hotels: paginatedHotels,
+        total: data.hotels.length,
+    })
 });
 app.post("/hotels", (req, res) => {
     const { city } = req.body;
