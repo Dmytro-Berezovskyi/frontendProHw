@@ -116,8 +116,9 @@
       "country_code": "US",
       "hotel_rating": 4,
       "phone_number": "18005740835",
-      "website": null,
-      "photo": "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "website": "https://www.woogo.com",
+      "photo": "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description": "At Woogo Central Park - Tempo Apartments, experience a harmonious blend of modern amenities and timeless design. Whether you're visiting for leisure or business, our prime location and exceptional service ensure every moment is unforgettable."
     },
     {
       "id": 11003176,
@@ -129,7 +130,8 @@
       "hotel_rating": 0,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description": "Amolite Hotel offers a peaceful escape in the bustling heart of the city. Relax in well-appointed rooms and enjoy top-tier facilities that cater to your every need."
     },
     {
       "id": 747134,
@@ -141,7 +143,8 @@
       "hotel_rating": 3.5,
       "phone_number": "212260414",
       "website": null,
-      "photo": "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Redford Hotel is the ideal choice for professionals on the go. With state-of-the-art meeting facilities and a location near major business hubs, we ensure your productivity and relaxation."
     },
     {
       "id": 720550,
@@ -153,7 +156,8 @@
       "hotel_rating": 3,
       "phone_number": "1 212 2191018",
       "website": null,
-      "photo": "https://images.pexels.com/photos/1579253/pexels-photo-1579253.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/1579253/pexels-photo-1579253.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Bring your loved ones to Hotel Richland New York, where spacious rooms and kid-friendly amenities create unforgettable family memories. Your next adventure starts here!"
     },
     {
       "id": 797074,
@@ -165,7 +169,8 @@
       "hotel_rating": 2.5,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"At Studio Lux Times Square, indulgence knows no bounds. From elegant suites to world-class dining, every detail is designed to elevate your stay."
     },
     {
       "id": 742987,
@@ -177,7 +182,8 @@
       "hotel_rating": 4,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Stay at The Bowery Hotel and unlock access to thrilling activities and local attractions. From outdoor adventures to cultural experiences, there's something for everyone."
     },
     {
       "id": 743452,
@@ -189,7 +195,8 @@
       "hotel_rating": 3.5,
       "phone_number": "1-212-398-2700",
       "website": null,
-      "photo": "https://images.pexels.com/photos/97083/pexels-photo-97083.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/97083/pexels-photo-97083.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"AC Hotel by Marriott New York Times Square is your perfect escape for two. Enjoy intimate settings, personalized service, and an ambiance made for romance."
     },
     {
       "id": 260469,
@@ -201,7 +208,8 @@
       "hotel_rating": 3,
       "phone_number": "1 212 777-0012",
       "website": null,
-      "photo": "https://images.pexels.com/photos/440155/pexels-photo-440155.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/440155/pexels-photo-440155.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Rejuvenate your body and mind at The Ridge Hotel. With a state-of-the-art spa, wellness programs, and serene surroundings, relaxation is always within reach."
     },
     {
       "id": 740399,
@@ -213,7 +221,8 @@
       "hotel_rating": 3,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/271643/pexels-photo-271643.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/271643/pexels-photo-271643.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"SoHo 54 Hotel offers an exclusive, intimate experience with stylish interiors and personalized service. Perfect for travelers seeking charm and comfort."
     },
     {
       "id": 5018104,
@@ -225,7 +234,8 @@
       "hotel_rating": 3,
       "phone_number": "XX",
       "website": null,
-      "photo": "https://images.pexels.com/photos/279746/pexels-photo-279746.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/279746/pexels-photo-279746.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Escape to Hotel Alexander, nestled amid stunning natural landscapes. Ideal for nature lovers, our hotel provides tranquility and breathtaking views."
     },
     {
       "id": 792811,
@@ -237,7 +247,8 @@
       "hotel_rating": 4.5,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/262047/pexels-photo-262047.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/262047/pexels-photo-262047.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Nestled in a building rich with history, 119 West 56th Street combines classic charm with modern conveniences. Discover a unique stay that celebrates the past while embracing the present."
     },
     {
       "id": 804220,
@@ -249,7 +260,8 @@
       "hotel_rating": 2.5,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/2736388/pexels-photo-2736388.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/2736388/pexels-photo-2736388.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Located in the heart of the city, Central Park View B&B puts you steps away from iconic landmarks, shopping, and dining. Experience the vibrant urban lifestyle with ease."
     },
     {
       "id": 5018107,
@@ -261,7 +273,8 @@
       "hotel_rating": 3,
       "phone_number": "17186985000",
       "website": null,
-      "photo": "https://images.pexels.com/photos/3634741/pexels-photo-3634741.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/3634741/pexels-photo-3634741.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Immerse yourself in local traditions at Staten Island Hotel. With its close proximity to cultural hotspots, you'll discover the true essence of the region."
     },
     {
       "id": 700390,
@@ -273,7 +286,8 @@
       "hotel_rating": 4.5,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/1001965/pexels-photo-1001965.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/1001965/pexels-photo-1001965.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Mondrian Park Avenue combines sleek architecture with innovative technology to offer a truly contemporary stay. Experience the future of hospitality with us."
     },
     {
       "id": 742946,
@@ -285,7 +299,8 @@
       "hotel_rating": 3,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/2029719/pexels-photo-2029719.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/2029719/pexels-photo-2029719.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Celebrate creativity at Pod Times Square, where art and design take center stage. Explore a unique ambiance inspired by local and global artistic influences."
     },
     {
       "id": 776932,
@@ -297,7 +312,8 @@
       "hotel_rating": 4,
       "phone_number": "121-247-51920",
       "website": "https://freehandhotels.com/new-york/rooms/",
-      "photo": "https://images.pexels.com/photos/2507010/pexels-photo-2507010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/2507010/pexels-photo-2507010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Stay sustainably at Freehand New York, where green practices and eco-conscious amenities ensure a guilt-free getaway that’s kind to the planet."
     },
     {
       "id": 741741,
@@ -309,7 +325,8 @@
       "hotel_rating": 2,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/2725675/pexels-photo-2725675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/2725675/pexels-photo-2725675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"The Grand NYC is your gateway to adventure in the mountains. Enjoy cozy accommodations, breathtaking views, and easy access to hiking and skiing."
     },
     {
       "id": 716815,
@@ -321,7 +338,8 @@
       "hotel_rating": 3,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/3144580/pexels-photo-3144580.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/3144580/pexels-photo-3144580.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Hello Broadway embodies elegance with its grand interiors and refined service. Ideal for those seeking a sophisticated retreat with a touch of glamour."
     },
     {
       "id": 802583,
@@ -333,7 +351,8 @@
       "hotel_rating": 5,
       "phone_number": "+1 212 842 5500",
       "website": null,
-      "photo": "https://images.pexels.com/photos/2598638/pexels-photo-2598638.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/2598638/pexels-photo-2598638.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Perfect for a quick getaway, The Dominick offers everything you need for a relaxing weekend: great dining, cozy rooms, and a prime location."
     },
     {
       "id": 5018106,
@@ -345,7 +364,8 @@
       "hotel_rating": 3,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/265947/pexels-photo-265947.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/265947/pexels-photo-265947.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Escape to HomeStay NYC, your tropical haven surrounded by crystal-clear waters and white sandy beaches. Relax, unwind, and embrace island life."
     },
     {
       "id": 751736,
@@ -357,7 +377,8 @@
       "hotel_rating": 3,
       "phone_number": "703-261-5677",
       "website": null,
-      "photo": "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Discover affordable excellence at Fairfield Inn & Suites by Marriott/World Trade Center Area. Enjoy cozy accommodations, excellent service, and all the essentials without breaking the bank."
     },
     {
       "id": 386689,
@@ -369,7 +390,8 @@
       "hotel_rating": 2.5,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/2134224/pexels-photo-2134224.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/2134224/pexels-photo-2134224.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"At Back Bay Suites, your furry friends are always welcome! We offer pet-friendly amenities to make traveling with your companions a breeze."
     },
     {
       "id": 567484,
@@ -381,7 +403,8 @@
       "hotel_rating": 3.5,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/2290753/pexels-photo-2290753.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/2290753/pexels-photo-2290753.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Indulge your taste buds at Global Luxury Suites at The Theatre District, where exceptional cuisine meets world-class hospitality. Savor every moment of your stay with our gourmet offerings."
     },
     {
       "id": 677300,
@@ -393,7 +416,8 @@
       "hotel_rating": 4,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/3201921/pexels-photo-3201921.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/3201921/pexels-photo-3201921.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Relax by the water at Vibrant 1BR in Fenway by Sonder, offering serene views and a tranquil atmosphere. Perfect for a peaceful escape from the everyday hustle."
     },
     {
       "id": 820605,
@@ -405,7 +429,8 @@
       "hotel_rating": null,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/2506990/pexels-photo-2506990.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/2506990/pexels-photo-2506990.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Unique 1BR in Financial District by Sonder redefines sophistication with its chic interiors and modern vibe. Perfect for travelers who appreciate style and elegance."
     },
     {
       "id": 731189,
@@ -417,7 +442,8 @@
       "hotel_rating": 3.5,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/271655/pexels-photo-271655.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/271655/pexels-photo-271655.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Surrounded by rolling hills and fresh air, Charming 2BR in South End by Sonder offers a cozy retreat for nature lovers and those looking to unwind in a rural setting."
     },
     {
       "id": 721848,
@@ -429,7 +455,8 @@
       "hotel_rating": 3.5,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/1145257/pexels-photo-1145257.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/1145257/pexels-photo-1145257.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Step back in time at Stunning 4BR in Downtown Crossing by Sonder, where timeless design and graceful service come together to create an unforgettable experience."
     },
     {
       "id": 677341,
@@ -441,7 +468,8 @@
       "hotel_rating": 3.5,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/3688261/pexels-photo-3688261.jpeg"
+      "photo": "https://images.pexels.com/photos/3688261/pexels-photo-3688261.jpeg",
+      "description":"Stay at Classic 3BR in Allston by Sonder, the perfect base for thrill-seekers. With easy access to outdoor activities and adventure sports, excitement is guaranteed."
     },
     {
       "id": 677347,
@@ -453,7 +481,8 @@
       "hotel_rating": 3.5,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Wake up to the soothing sights and sounds of the lake at Posh 2BR in Allston by Sonder. Whether for relaxation or water activities, it’s an idyllic destination."
     },
     {
       "id": 810445,
@@ -465,7 +494,8 @@
       "hotel_rating": 3.5,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/53464/sheraton-palace-hotel-lobby-architecture-san-francisco-53464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/53464/sheraton-palace-hotel-lobby-architecture-san-francisco-53464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Sophisticated 2BR in Downtown Crossing by Sonder combines contemporary design with ultimate comfort, creating a welcoming space for both leisure and business travelers."
     },
     {
       "id": 677372,
@@ -477,7 +507,8 @@
       "hotel_rating": 3,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/70441/pexels-photo-70441.jpeg"
+      "photo": "https://images.pexels.com/photos/70441/pexels-photo-70441.jpeg",
+      "description":"Enjoy breathtaking sunsets every evening at Posh Studio in Downtown Crossing by Sonder, perfectly situated to offer stunning vistas you’ll never forget."
     },
     {
       "id": 822534,
@@ -489,7 +520,8 @@
       "hotel_rating": null,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/1134176/pexels-photo-1134176.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/1134176/pexels-photo-1134176.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Stay at Playful 1BR in Fenway by Sonder and explore the vibrant culture and history of the region, with local attractions just steps away."
     },
     {
       "id": 793847,
@@ -501,7 +533,8 @@
       "hotel_rating": 4,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/2507010/pexels-photo-2507010.jpeg"
+      "photo": "https://images.pexels.com/photos/2507010/pexels-photo-2507010.jpeg",
+      "description":"Pamper yourself at Stunning 1 BR In Allston by Sonder, where a world-class spa and wellness center promise total rejuvenation and relaxation."
     },
     {
       "id": 677396,
@@ -513,7 +546,8 @@
       "hotel_rating": 4,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/2869215/pexels-photo-2869215.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/2869215/pexels-photo-2869215.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Sonder - St. Mary's offers a refined yet unpretentious atmosphere, making it an ideal choice for travelers who value understated elegance."
     },
     {
       "id": 677411,
@@ -525,7 +559,8 @@
       "hotel_rating": 3.5,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/53577/hotel-architectural-tourism-travel-53577.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/53577/hotel-architectural-tourism-travel-53577.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"For the adventure enthusiast, Bright 2BR in Downtown Crossing by Sonder provides access to exciting activities like hiking, kayaking, and more, ensuring every day is unforgettable."
     },
     {
       "id": 677410,
@@ -537,7 +572,8 @@
       "hotel_rating": 3.5,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/261388/pexels-photo-261388.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/261388/pexels-photo-261388.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Feel right at home at Simple 1BR in Theater District by Sonder with cozy rooms, warm hospitality, and all the comforts you need for a perfect stay."
     },
     {
       "id": 677425,
@@ -549,7 +585,8 @@
       "hotel_rating": 4,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/453201/pexels-photo-453201.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/453201/pexels-photo-453201.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Experience unparalleled sophistication at Central 2BR in South End by Sonder, where modern luxury and meticulous attention to detail define your stay."
     },
     {
       "id": 677426,
@@ -561,7 +598,8 @@
       "hotel_rating": 4,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/3124079/pexels-photo-3124079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/3124079/pexels-photo-3124079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Find your sanctuary at Classic 1BR in Fenway by Sonder, tucked away in a peaceful location perfect for unwinding and disconnecting."
     },
     {
       "id": 721859,
@@ -573,7 +611,8 @@
       "hotel_rating": 4,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/167533/pexels-photo-167533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/167533/pexels-photo-167533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Stay close to the action at Hip 3BR in Downtown Crossing by Sonder, conveniently located near top shopping destinations and bustling markets."
     },
     {
       "id": 801610,
@@ -585,7 +624,8 @@
       "hotel_rating": 4,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/210604/pexels-photo-210604.jpeg"
+      "photo": "https://images.pexels.com/photos/210604/pexels-photo-210604.jpeg",
+      "description":"Playful 2BR in South End by Sonder is the perfect choice for couples seeking privacy and charm. With intimate settings and thoughtful touches, romance is always in the air."
     },
     {
       "id": 677429,
@@ -597,7 +637,8 @@
       "hotel_rating": 3.5,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/635041/pexels-photo-635041.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/635041/pexels-photo-635041.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Experience the city’s pulse at Airy 2BR in Allston by Sonder, located steps away from lively bars, clubs, and entertainment hotspots."
     },
     {
       "id": 677433,
@@ -609,7 +650,8 @@
       "hotel_rating": 4,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/189333/pexels-photo-189333.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/189333/pexels-photo-189333.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Relax at Bright 1BR in South End by Sonder, where sandy shores and ocean breezes create the ultimate beachfront getaway."
     },
     {
       "id": 677449,
@@ -621,7 +663,8 @@
       "hotel_rating": 4,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/2883048/pexels-photo-2883048.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/2883048/pexels-photo-2883048.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Industrial 3BR in Downtown by Sonder offers the perfect balance for business travelers, with meeting facilities, high-speed Wi-Fi, and a comfortable place to unwind.\n"
     },
     {
       "id": 677450,
@@ -633,7 +676,8 @@
       "hotel_rating": 3.5,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Escape to Chic 1BR in Downtown Crossing by Sonder, a cozy haven that blends warm hospitality with scenic surroundings for a truly enchanting stay."
     },
     {
       "id": 677452,
@@ -645,7 +689,8 @@
       "hotel_rating": 4,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/2291624/pexels-photo-2291624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/2291624/pexels-photo-2291624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Satisfy your cravings at Sonder - Financial District, featuring exceptional on-site dining and easy access to renowned local restaurants."
     },
     {
       "id": 677455,
@@ -657,7 +702,8 @@
       "hotel_rating": 3,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/3771110/pexels-photo-3771110.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/3771110/pexels-photo-3771110.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Immerse yourself in creativity at Bright Studio in Downtown Crossing by Sonder, adorned with local art and located near galleries and cultural landmarks."
     },
     {
       "id": 677470,
@@ -669,7 +715,8 @@
       "hotel_rating": 4,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/279805/pexels-photo-279805.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/279805/pexels-photo-279805.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Central 3BR in South End by Sonder makes traveling simple with its close proximity to airports, train stations, and public transportation hubs."
     },
     {
       "id": 677476,
@@ -681,7 +728,8 @@
       "hotel_rating": 3.5,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/2291636/pexels-photo-2291636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/2291636/pexels-photo-2291636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Nestled in the mountains, Smart 2BR in Brighton by Sonder is a winter wonderland offering skiing, snowboarding, and cozy fireside evenings."
     },
     {
       "id": 677477,
@@ -693,7 +741,8 @@
       "hotel_rating": 3.5,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/5371484/pexels-photo-5371484.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/5371484/pexels-photo-5371484.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Enjoy the full resort experience at Hip 1BR in Allston by Sonder, complete with pools, fitness centers, and plenty of amenities for a luxurious stay."
     },
     {
       "id": 677480,
@@ -705,7 +754,8 @@
       "hotel_rating": 3.5,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/210604/pexels-photo-210604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/210604/pexels-photo-210604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Stay at Smart 1BR in Downtown Crossing by Sonder, where lush gardens and eco-friendly practices create a serene environment perfect for relaxation."
     },
     {
       "id": 677481,
@@ -717,7 +767,8 @@
       "hotel_rating": 3.5,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/6394711/pexels-photo-6394711.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/6394711/pexels-photo-6394711.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Hip 2BR in Allston by Sonder puts you at the heart of the action, offering easy access to major festivals, events, and local celebrations."
     },
     {
       "id": 677519,
@@ -729,7 +780,8 @@
       "hotel_rating": 4,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/6466304/pexels-photo-6466304.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/6466304/pexels-photo-6466304.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Charming 1BR in Fenway by Sonder boasts stunning waterfront views, offering guests a peaceful retreat with plenty of outdoor activities to enjoy."
     },
     {
       "id": 677520,
@@ -741,7 +793,8 @@
       "hotel_rating": 3.5,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/2291599/pexels-photo-2291599.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/2291599/pexels-photo-2291599.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Experience the charm of the past at Lively 1BR in Theater District by Sonder, a beautifully restored historic property that tells a story with every corner."
     },
     {
       "id": 705227,
@@ -753,7 +806,8 @@
       "hotel_rating": 3.5,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/1134175/pexels-photo-1134175.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/1134175/pexels-photo-1134175.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Discover your private paradise at Charming 1BR in Seaport by Sonder, a secluded island retreat where tranquility meets luxury."
     },
     {
       "id": 696618,
@@ -765,7 +819,8 @@
       "hotel_rating": 4,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/528427/pexels-photo-528427.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/528427/pexels-photo-528427.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Central 1BR in Fenway by Sonder is perfect for families, offering kid-friendly amenities, spacious accommodations, and activities for all ages."
     },
     {
       "id": 677526,
@@ -777,7 +832,8 @@
       "hotel_rating": 3.5,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/6284232/pexels-photo-6284232.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/6284232/pexels-photo-6284232.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Located in the city’s most vibrant district, Simple Studio in Downtown Crossing by Sonder combines sleek design, premium amenities, and a prime location.\n"
     },
     {
       "id": 677527,
@@ -789,7 +845,8 @@
       "hotel_rating": 3.5,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/3682240/pexels-photo-3682240.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/3682240/pexels-photo-3682240.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Modern 3BR in Brighton by Sonder is your ticket to paradise, with palm-lined pools, vibrant tropical surroundings, and sunny skies all year round."
     },
     {
       "id": 677528,
@@ -801,7 +858,8 @@
       "hotel_rating": 3.5,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/6474535/pexels-photo-6474535.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/6474535/pexels-photo-6474535.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Immerse yourself in a blend of traditions at Pleasant Back Bay Suites by Sonder, where the décor and cuisine reflect the spirit of the destination."
     },
     {
       "id": 677537,
@@ -813,7 +871,8 @@
       "hotel_rating": 3.5,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/2029719/pexels-photo-2029719.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/2029719/pexels-photo-2029719.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Recharge your body and soul at Sonder - The Continuum, offering yoga classes, spa treatments, and healthy dining options for a complete wellness experience."
     },
     {
       "id": 696614,
@@ -825,7 +884,8 @@
       "hotel_rating": 3.5,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/1861153/pexels-photo-1861153.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/1861153/pexels-photo-1861153.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Smart 1BR in Seaport by Sonder combines opulent amenities with breathtaking natural surroundings, offering an idyllic escape from the everyday."
     },
     {
       "id": 677694,
@@ -837,7 +897,8 @@
       "hotel_rating": 4,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/2649771/pexels-photo-2649771.jpeg"
+      "photo": "https://images.pexels.com/photos/2649771/pexels-photo-2649771.jpeg",
+      "description":"With stylish décor and a welcoming atmosphere, Unique 2BR in Downtown Crossing by Sonder is the perfect blend of comfort and sophistication for any traveler."
     },
     {
       "id": 677550,
@@ -849,7 +910,8 @@
       "hotel_rating": 3,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/3316922/pexels-photo-3316922.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/3316922/pexels-photo-3316922.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Indulge in gourmet dining at Posh Studio in Back Bay by Sonder, where every meal is a culinary masterpiece crafted with the finest ingredients."
     },
     {
       "id": 787996,
@@ -861,7 +923,8 @@
       "hotel_rating": 4,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/3688261/pexels-photo-3688261.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/3688261/pexels-photo-3688261.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Vibrant 2BR in Downtown Crossing by Sonder offers an intimate, boutique experience with personalized service and attention to detail, perfect for those seeking something unique.\n"
     },
     {
       "id": 731262,
@@ -873,7 +936,8 @@
       "hotel_rating": 3.5,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/5371563/pexels-photo-5371563.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/5371563/pexels-photo-5371563.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Stunning 3BR in Downtown Crossing by Sonder offers a peaceful retreat in the heart of the city, where you can relax and recharge without leaving the excitement behind."
     },
     {
       "id": 677559,
@@ -885,7 +949,8 @@
       "hotel_rating": 4,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/3768095/pexels-photo-3768095.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/3768095/pexels-photo-3768095.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"At Industrial 1BR in Downtown Crossing by Sonder, every detail is designed to delight. From plush rooms to exquisite service, expect luxury at every turn."
     },
     {
       "id": 677565,
@@ -897,7 +962,8 @@
       "hotel_rating": 4,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/4577673/pexels-photo-4577673.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/4577673/pexels-photo-4577673.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Experience ultimate relaxation at Industrial 2BR in Downtown Crossing by Sonder, where comfortable accommodations and personalized service ensure a restful stay."
     },
     {
       "id": 677571,
@@ -909,7 +975,8 @@
       "hotel_rating": 3.5,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/2952663/pexels-photo-2952663.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/2952663/pexels-photo-2952663.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Lovely Brighton Suites by Sonder offers a refined and private experience, perfect for those seeking an exclusive escape with exceptional service."
     },
     {
       "id": 724715,
@@ -921,7 +988,8 @@
       "hotel_rating": 4,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/2029698/pexels-photo-2029698.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/2029698/pexels-photo-2029698.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Modern 2BR in Downtown Crossing by Sonder is the perfect blend of adventure and relaxation, with access to thrilling outdoor activities and comfortable, restful rooms."
     },
     {
       "id": 677574,
@@ -933,7 +1001,8 @@
       "hotel_rating": 4,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/6434632/pexels-photo-6434632.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/6434632/pexels-photo-6434632.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Loft Style 2BR in Downtown Crossing by Sonder’s prime location means you’re always just moments away from the best attractions, shopping, and dining in the area."
     },
     {
       "id": 677577,
@@ -945,7 +1014,8 @@
       "hotel_rating": 3.5,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/6466482/pexels-photo-6466482.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/6466482/pexels-photo-6466482.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description":"Chic 3BR in Lower Roxbury by Sonder invites you to enjoy a stylish and comfortable stay, where contemporary design meets exceptional service."
     },
     {
       "id": 757401,
@@ -957,7 +1027,8 @@
       "hotel_rating": 3.5,
       "phone_number": null,
       "website": null,
-      "photo": "https://images.pexels.com/photos/2873951/pexels-photo-2873951.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "photo": "https://images.pexels.com/photos/2873951/pexels-photo-2873951.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description": "Stunning 1BR in Theater District by Sonder offers a peaceful sanctuary away from the hustle and bustle. Surrounded by serene landscapes, it’s the perfect place to unwind, recharge, and reconnect with nature. Enjoy luxurious amenities and thoughtful touches that make every moment of your stay special."
     }
   ]
 }
