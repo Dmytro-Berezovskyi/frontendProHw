@@ -33,10 +33,30 @@ export default function OneHotel() {
                         </Divider>
 
                         <div style={{display: "flex", gap: "20px"}}>
-                            <span>City: {hotel.city} {hotel.country_code}</span>
-                            <span>Address: {hotel.address}</span>
-                            <span>Phone number: {hotel.phone_number}</span>
+                            <span style={{color: "rgba(0,0,0,0.5)", fontStyle: "italic"}}>City: {hotel.city} {hotel.country_code}</span>
+                            <span style={{color: "rgba(0,0,0,0.5)", fontStyle: "italic"}}>Address: {hotel.address}</span>
+                            {hotel.phone_number ? (
+                                <span style={{
+                                    color: "rgba(0,0,0,0.5)",
+                                    fontStyle: "italic"
+                                }}>
+                                    Phone number: {hotel.phone_number}
+                                </span>
+                            ) : null}
+                            {hotel.website ? (
+                                <a href={hotel.website} target="_blank" rel="noopener noreferrer">
+                                    <span style={{
+                                        color: "rgba(0,0,0,0.5)",
+                                        fontStyle: "italic"
+                                    }}>
+                                    Website: {hotel.website}
+                                </span>
+                                </a>
+                            ) : null}
+
                         </div>
+
+                        <p style={{fontWeight: "600", fontSize: "18px"}}>{hotel.description}</p>
                     </div>
 
                 </div>

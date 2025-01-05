@@ -22,7 +22,6 @@ const selectedHotelsSlice = createSlice({
                 state.loading = false;
                 state.error = "";
                 state.selectedHotels = action.payload;
-                console.log("Payload received:", action.payload);
             })
             .addCase(fetchSelectedHotels.rejected, (state, action) => {
                 state.loading = false;

@@ -24,7 +24,7 @@ export default function DestinationHotels({ selectedHotels }) {
     const selectedHotelsCard = selectedHotels.map((hotel) => {
         return <Col span={6}>
             <div style={{display: "flex", flexDirection: "column"}}>
-                <NavLink to={"/hotel"}>
+                <NavLink to={`/hotel/${hotel.id}`}>
                     <div style={{background: "grey", height: "150px"}}>
                         <img
                             src={hotel.photo} alt="hotel photo"

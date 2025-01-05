@@ -12,11 +12,6 @@ export default function HotelsItem() {
 
     const handlePageChange = (page) => {
         dispatch(fetchHotels({page: page}));
-        console.log("PAGE" ,page);
-    };
-
-    const selectedHotel = (id) => {
-       return hotels.hotels.filter((hotel) => hotel.id === id);
     };
 
     useEffect(() => {
@@ -27,7 +22,7 @@ export default function HotelsItem() {
         return  <Col span={6}>
 
                     <div style={{display: "flex", flexDirection: "column"}}>
-                        <NavLink to={`/hotel/${hotel.id}`} onClick={() => selectedHotel(hotel.id)}>
+                        <NavLink to={`/hotel/${hotel.id}`}>
                             <div style={{background: "grey", height: "150px"}}>
                                 <img
                                     src={hotel.photo} alt="hotel photo"
