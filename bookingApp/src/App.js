@@ -4,6 +4,7 @@ import HeaderFooterLayout from "./components/HeaderFooterLayout";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Hotels from "./pages/Hotels";
+import OneHotel from "./pages/OneHotel/OneHotel";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
         {
             path: "/hotels",
             element: <Hotels />,
+        },
+        {
+            path: "/hotel/:id",
+            element: <OneHotel />,
         },
         {
             path: "*",

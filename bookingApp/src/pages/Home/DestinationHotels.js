@@ -3,12 +3,13 @@ import PropTypes from "prop-types";
 import { Col, Divider, Row } from "antd";
 
 import {hotelsPhoto} from "../../helpers/hotelsPhoto";
+import {NavLink} from "react-router-dom";
 
 export default function DestinationHotels({ selectedHotels }) {
-    const randomPhoto = () => {
-        const randomIndex = Math.floor(Math.random(hotelsPhoto) * hotelsPhoto.length);
-        return hotelsPhoto[randomIndex];
-    }
+    //const randomPhoto = () => {
+    //    const randomIndex = Math.floor(Math.random(hotelsPhoto) * hotelsPhoto.length);
+    //    return hotelsPhoto[randomIndex];
+    //}
 
     if (!selectedHotels || selectedHotels.length === 0) {
         return <p style={{width: "60%"}}>
@@ -23,10 +24,15 @@ export default function DestinationHotels({ selectedHotels }) {
     const selectedHotelsCard = selectedHotels.map((hotel) => {
         return <Col span={6}>
             <div style={{display: "flex", flexDirection: "column"}}>
-                <div style={{background: "grey", height: "150px"}}>
-                    <img src={randomPhoto()} alt="hotel photo" style={{width:"100%",height:"100%", objectFit: "cover"}}/>
-                </div>
-                <h3>{hotel.name}</h3>
+                <NavLink to={"/hotel"}>
+                    <div style={{background: "grey", height: "150px"}}>
+                        <img
+                            src={hotel.photo} alt="hotel photo"
+                            style={{width: "100%", height: "100%", objectFit: "cover"}}
+                        />
+                    </div>
+                    <h3>{hotel.name}</h3>
+                </NavLink>
                 <span>City: {hotel.city}</span>
                 <span>Address: {hotel.address}</span>
             </div>

@@ -23,6 +23,18 @@ app.get("/hotels", (req, res) => {
         total: data.hotels.length,
     })
 });
+
+app.get("/hotels/:id", (req, res) => {
+    const { id } = req.params;
+    const hotel = data.hotels.find((hotel) => hotel.id === parseInt(id, 10));
+
+    if (hotel) {
+        res.json(hotel);
+    } else {
+        res.status(404).json({ message: "Hotel not found" });
+    }
+});
+
 app.post("/hotels", (req, res) => {
     const { city } = req.body;
     const hotels = data.hotels.filter((hotel) => hotel.city === city);

@@ -7,7 +7,7 @@ import dayjs from "dayjs";
 import { fetchDestination } from "../../store/thunks/destinationThunk";
 import { fetchSelectedHotels } from "../../store/thunks/selectedHotelsThunk";
 
-import DestinationHotels from "../DestinationHotels";
+import DestinationHotels from "./DestinationHotels"
 
 import { Select, DatePicker, Button, Divider } from "antd";
 
