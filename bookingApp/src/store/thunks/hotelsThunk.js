@@ -10,6 +10,7 @@ export const fetchHotels = createAsyncThunk("hotels/fetchHotels", async ({ page 
         return ({
             hotels: hotels.data.hotels,
             total: hotels.data.total,
+            currentPage: page,
         });
     } catch (e) {
         return rejectWithValue(e.response?.data?.message || e.message);

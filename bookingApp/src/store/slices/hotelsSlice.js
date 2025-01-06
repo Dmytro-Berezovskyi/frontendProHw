@@ -25,6 +25,7 @@ const hotelsSlice = createSlice({
                 state.error = "";
                 state.hotels = action.payload.hotels;
                 state.total = action.payload.total;
+                state.currentPage = action.payload.currentPage || state.currentPage;
             })
             .addCase(fetchHotels.rejected, (state, action) => {
                 state.loading = false;

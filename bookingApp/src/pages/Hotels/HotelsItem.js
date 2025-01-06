@@ -18,6 +18,8 @@ export default function HotelsItem() {
         dispatch(fetchHotels({ page: 1}));
     },[dispatch]);
 
+    console.log(hotels.currentPage);
+
     const hotelCard = hotels.hotels.map((hotel) => {
         return  <Col span={6}>
 
