@@ -4,12 +4,12 @@ import { useDispatch, useSelector } from "react-redux";
 import { Form, Field, ErrorMessage, Formik } from "formik";
 import dayjs from "dayjs";
 
-import { fetchDestination } from "../../store/thunks/destinationThunk";
 import { fetchSelectedHotels } from "../../store/thunks/selectedHotelsThunk";
 
 import DestinationHotels from "./DestinationHotels"
 
 import { Select, DatePicker, Button, Divider } from "antd";
+import { MinusOutlined, PlusOutlined } from "@ant-design/icons";
 
 export default function Home() {
     const dispatch = useDispatch();
@@ -83,7 +83,7 @@ export default function Home() {
                                             placeholder="Destination"
                                             optionFilterProp="label"
                                             filterSort={(optionA, optionB) =>
-                                                (optionA?.label ?? '').toLowerCase().localeCompare((optionB?.label ?? '').toLowerCase())
+                                                (optionA?.label ?? "").toLowerCase().localeCompare((optionB?.label ?? "").toLowerCase())
                                             }
                                             onChange={(values) => setFieldValue("destination", values)}
                                             options={destination.destination}
@@ -122,16 +122,54 @@ export default function Home() {
                         </div>
 
                         <div style={{display: "flex", gap: "10px", justifyContent: "center"}}>
-                            <Button
-                                onClick={() => setFieldValue("adults", values.adults + 1)}
-                            >
-                                Adults {values.adults}
-                            </Button>
-                            <Button
-                                onClick={() => setFieldValue("children", values.children + 1)}
-                            >
-                                Children {values.children}
-                            </Button>
+                            <div style={{
+                                border: "1px solid #d9d9d9",
+                                borderRadius: "6px",
+                                display: "flex",
+                                alignItems: "center",
+                                height: "100%"
+                            }}>
+                                <Button
+                                    onClick={() => setFieldValue("adults", values.adults - 1)}
+                                    style={{border: "none", height: "100%", marginRight: "5px"}}
+                                    disabled={values.adults === 1}
+                                >
+                                    <MinusOutlined style={{fontSize: "14px"}}/>
+                                </Button>
+                                <span>Adults {values.adults}</span>
+                                <Button
+                                    onClick={() => setFieldValue("adults", values.adults + 1)}
+                                    style={{border: "none", height: "100%", marginLeft: "5px"}}
+                                    disabled={values.adults === 4}
+                                >
+                                    <PlusOutlined style={{fontSize: "14px"}}/>
+                                </Button>
+                            </div>
+
+                            <div style={{
+                                border: "1px solid #d9d9d9",
+                                borderRadius: "6px",
+                                display: "flex",
+                                alignItems: "center",
+                                height: "100%"
+                            }}>
+                                <Button
+                                    onClick={() => setFieldValue("children", values.children - 1)}
+                                    style={{border: "none", height: "100%", marginRight: "5px"}}
+                                    disabled={values.children === 0}
+                                >
+                                    <MinusOutlined style={{fontSize: "14px"}}/>
+                                </Button>
+                                <span>Children {values.children}</span>
+                                <Button
+                                    onClick={() => setFieldValue("children", values.children + 1)}
+                                    style={{border: "none", height: "100%", marginLeft: "5px"}}
+                                    disabled={values.children === 5}
+                                >
+                                    <PlusOutlined style={{fontSize: "14px"}}/>
+                                </Button>
+                            </div>
+
                             <Button type="primary" htmlType="submit">Submit</Button>
                         </div>
 
@@ -146,7 +184,7 @@ export default function Home() {
                     </h1>
                 </Divider>
 
-                <DestinationHotels selectedHotels={selectedHotels.selectedHotels} />
+                <DestinationHotels selectedHotels={selectedHotels.selectedHotels}/>
             </div>
         </>
     )

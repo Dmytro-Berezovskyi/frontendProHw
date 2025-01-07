@@ -18,7 +18,7 @@ export default function OneHotel() {
 
     return (
         <>
-            {hotel ? (
+            {hotel.length !== 0 ? (
                 <div style={{display: "flex", flexDirection: "column"}}>
                     <div style={{background: "grey", height: "60vh", width: "90%", marginLeft: "auto", marginRight: "auto"}}>
                         <img
@@ -62,7 +62,10 @@ export default function OneHotel() {
 
                 </div>
             ) : (
-                <p><LoadingOutlined /> Loading...</p>
+                <div style={{display: "flex", justifyContent: "center", gap: "10px", margin: "20px"}}>
+                    <LoadingOutlined/>
+                    <span style={{fontSize: "20px"}}>Loading...</span>
+                </div>
             )}
         </>
     )

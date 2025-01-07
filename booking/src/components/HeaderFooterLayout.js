@@ -41,17 +41,31 @@ export default function HeaderFooterLayout () {
                     marginBottom: "50px"
                 }}
             >
-                <div style={{border: "3px solid white", padding: "5px", marginRight: "10px", height: "85%", display: "flex", alignItems: "center"}}>
-                    <h1 style={{textTransform: "uppercase", fontWeight: "800", fontSize: "20px", margin: 0, color: "white"}}>
+                <NavLink to={"/"} style={{
+                    border: "3px solid white",
+                    padding: "5px",
+                    marginRight: "10px",
+                    height: "85%",
+                    display: "flex",
+                    alignItems: "center"
+                }}>
+                    <h1 style={{
+                        textTransform: "uppercase",
+                        fontWeight: "800",
+                        fontSize: "20px",
+                        margin: 0,
+                        color: "white"
+                    }}>
                         Plan&Stay
                     </h1>
-                </div>
+                </NavLink>
+
                 <Menu
                     theme="dark"
                     mode="horizontal"
-                    defaultSelectedKeys={[currentPath]}
+                    defaultSelectedKeys={currentPath}
                     items={items}
-                    style={{ flex: 1, minWidth: 0 }}
+                    style={{flex: 1, minWidth: 0}}
                 />
             </Header>
             <Content
