@@ -1,5 +1,8 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
+import { hotelsLoader } from "./loaders/hotelsLoader";
+import { destinationLoader } from "./loaders/hotelsLoader";
+
 import HeaderFooterLayout from "./components/HeaderFooterLayout";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -14,6 +17,7 @@ const router = createBrowserRouter([
         {
             index: "true",
             element: <Home />,
+            loader: destinationLoader,
         },
         {
             path: "/about",
@@ -22,6 +26,7 @@ const router = createBrowserRouter([
         {
             path: "/hotels",
             element: <Hotels />,
+            loader: hotelsLoader,
         },
         {
             path: "/hotel/:id",

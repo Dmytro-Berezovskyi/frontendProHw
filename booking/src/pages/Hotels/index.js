@@ -1,6 +1,6 @@
 import HotelsItem from "./HotelsItem";
 
-import {Divider, Pagination} from "antd";
+import { Divider } from "antd";
 
 export default function Hotels() {
     return (

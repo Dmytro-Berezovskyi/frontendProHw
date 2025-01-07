@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -14,12 +13,8 @@ export default function HotelsItem() {
         dispatch(fetchHotels({page: page}));
     };
 
-    useEffect(() => {
-        dispatch(fetchHotels({ page: 1}));
-    },[dispatch]);
-
     const hotelCard = hotels.hotels.map((hotel) => {
-        return  <Col span={6}>
+        return  <Col span={6} key={hotel.id}>
 
                     <div style={{display: "flex", flexDirection: "column"}}>
                         <NavLink to={`/hotel/${hotel.id}`}>

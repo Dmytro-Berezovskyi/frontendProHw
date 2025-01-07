@@ -10,7 +10,6 @@ import { fetchSelectedHotels } from "../../store/thunks/selectedHotelsThunk";
 import DestinationHotels from "./DestinationHotels"
 
 import { Select, DatePicker, Button, Divider } from "antd";
-import { LoadingOutlined } from '@ant-design/icons';
 
 export default function Home() {
     const dispatch = useDispatch();
@@ -19,10 +18,6 @@ export default function Home() {
     const destination = useSelector((state) => state.destination);
     const selectedHotels = useSelector((state) => state.selectedHotels);
     const [submitted, setSubmitted] = useState(false);
-
-    useEffect(() => {
-        dispatch(fetchDestination());
-    },[dispatch])
 
     useEffect(() => {
         if (submitted && !selectedHotels.loading && selectedHotels.selectedHotels.length === 0 && selectedHotels.error === "") {
